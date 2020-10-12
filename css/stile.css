@@ -1,0 +1,152 @@
+.header {
+  display: flex;
+  padding: 36px 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 90px;
+  height: 28px;
+  margin-right: 393px;
+}
+
+.header__link {
+  justify-content: center;
+}
+
+.header__text {
+  margin-right: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
+.header__button {
+  width: 101px;
+  padding: 13px 24px;
+  bottom: 26%;
+  border: 2px solid #1565D8;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
+  border-radius: 8px;
+  color: #1565D8;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.selection {
+  position: relative;
+  overflow: hidden;
+}
+
+.selection__img {
+  position: absolute;
+  z-index: -1;
+  height: 700px;
+}
+
+.selection__button--ready {
+  color: #36B37E;
+  background-color: rgba(54, 179, 126, 0.1);
+  border: none;
+  border-radius: 2000px;
+}
+
+.selection__button--sel {
+  width: 259px;
+  height: 55px;
+  background: #183B56;
+  border: none;
+  border-radius: 8px;
+  margin: 53px 0 0 0;
+}
+
+.selection__button--sel__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.selection__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  max-width: 425px;
+  margin: 28px 0 0 0;
+}
+
+.selection__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+  max-width: 652px;
+  margin: 28px 0 0 0;
+}
+
+.selection__prise {
+  height: 36px;
+}
+
+.selection__prise--blok {
+  display: flex;
+}
+
+.selection__prise--button {
+  padding: 0;
+  height: 36px;
+  width: 36px;
+  border-radius: 12px;
+  border: 0.5px solid #1565D8;
+  margin-right: 0 8px;
+}
+
+.selection__prise--link {
+  align-items: center;
+  align-content: center;
+  height: 36px;
+}
+
+.prise__text {
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=stile.css.map */

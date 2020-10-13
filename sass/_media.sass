@@ -20,12 +20,35 @@
     &__button
       &--ready
         z-index: 10
+  .advant
+    flex-wrap: wrap
+    justify-content: center
+    &__img
+      width: 322px
+      height: 490px
+      &--mine
+        width: 320px
+        height: 230px
+      &--mini
+        width: 320px
+        height: 230px
+    &__info
+      margin-top: 40px
+      max-width: 672px
+      height: 277px
+      &--title
+        width: 565px
+        margin-top: 40px
+      &--text
+        margin-top: 24px
+        margin-bottom: 24px
+        width: 672px
 @media  ( max-width: 986px )
   container: 650px
 
 @media ( max-width: 768px)
   .container
-    max-width: 650px
+    max-width: 748px
   .header
     &__nav
       position: relative
@@ -72,9 +95,23 @@
         margin-top: 35px
   .prise
     margin-top: 40px
+  .advant
+    justify-content: center
+    &__img
+      width: 322px
+      height: 490px
+      margin-right: 30px
+      flex-wrap: nowrap
+      &--mine
+        margin-left: 0
+        width: 320px
+        height: 230px
+      &--mini
+        width: 320px
+        height: 230px
 @media ( max-width: 425px)
   .container
-    max-width: 400px
+    max-width: 415px
   .selection
     &__img
       flex-basis: 100%
@@ -119,6 +156,46 @@
       font-size: 16px
       line-height: 20px
       letter-spacing: 0.2px
+  .advant
+    &__img
+      width: 290px
+      height: 300px
+      margin: 0
+      &--photo
+        display: flex
+      &--mine
+        margin: 18px 0 0 0
+        width: 138px
+        height: 97px
+      &--mini
+        margin: 18px 18px 0 0
+        width: 138px
+        height: 97px
+    &__info
+      max-width: 415px
+      margin-left: 0
+      &--title
+        max-width: 280px
+        margin: auto
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        max-width: 280px
+        margin: 20px auto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &--link
+        display: none
+
 @media  ( max-width: 320px )
   .container
     max-width: 300px

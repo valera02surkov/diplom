@@ -1,0 +1,138 @@
+@media ( max-width: 1400px  )
+  .container
+    max-width: 1200px
+@media  (max-width: 1200px )
+  .container
+    max-width: 1100px
+  .header
+    &__logo
+      margin-right: 380px
+  .selection
+    max-width: 1100px
+    overflow: hidden
+@media ( max-width: 1024px)
+  .container
+    max-width: 986px
+  .header
+    &__logo
+      margin-right: 180px
+  .selection
+    &__button
+      &--ready
+        z-index: 10
+@media  ( max-width: 986px )
+  container: 650px
+
+@media ( max-width: 768px)
+  .container
+    max-width: 650px
+  .header
+    &__nav
+      position: relative
+      &--link
+        display: none
+    &__button
+      display: none
+    &__mobail
+      display: flex
+      width: 22px
+      right: 0
+      height: 18px
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      border: none
+      &--button
+        height: 2px
+        width: 24px
+        background-color: #3A4C66
+  .selection
+    &__img
+      right: -160px
+      height: 100%
+    &__title
+      max-width: 365px
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: #183B56
+      margin-top: 24px
+    &__text
+      max-width: 407px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      margin-top: 20px
+    &__button
+      &--sel
+        margin-top: 35px
+  .prise
+    margin-top: 40px
+@media ( max-width: 425px)
+  .container
+    max-width: 400px
+  .selection
+    &__img
+      flex-basis: 100%
+      left: -95%
+    &__title
+      margin-top: 20px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &__button
+      &--sel
+        margin-top: 24px
+        margin-left: 20%
+      &--ready
+        width: 196px
+        margin-left: 25%
+        margin-right: 25%
+        margin-top: 381px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+  .prise
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    &__box
+      margin: auto
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+@media  ( max-width: 320px )
+  .container
+    max-width: 300px
+  .selection
+    &__img
+      left: -125%
+    &__title
+      margin-left: 10px
+    &__text
+      margin-left: 10px
+    &__button
+      &--ready
+        margin-left: 20%
+      &--sel
+        margin-left: 10%
+  .prise
+    margin-left: 0
+    width: 320px
+    flex-wrap: wrap

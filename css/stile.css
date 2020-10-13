@@ -313,7 +313,7 @@ img {
 }
 
 .advant__info {
-  width: 412px;
+  max-width: 412px;
   height: 426px;
   margin-left: 57px;
   margin-bottom: 54px;
@@ -499,6 +499,9 @@ img {
   .advant__img--mini {
     width: 320px;
     height: 230px;
+  }
+  .advant__info {
+    margin-left: 0;
   }
 }
 

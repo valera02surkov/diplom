@@ -43,9 +43,19 @@
         margin-top: 24px
         margin-bottom: 24px
         width: 672px
+        height: 150px
+  .trend
+    margin-top: 180px
+    &__header
+      justify-content: space-between
+      &--title
+        margin-right: 50px
+    &__card
+      margin-right: 30px
+    &__flex
+      justify-content: start
 @media  ( max-width: 986px )
   container: 650px
-
 @media ( max-width: 768px)
   .container
     max-width: 728px
@@ -122,6 +132,15 @@
         height: 144px
       &--link
         width: 260px
+  .trend
+    &__header
+      flex-direction: column
+      &--title
+        margin-right: 0
+      &--text
+        margin-top: 27.5px
+    &__flex
+      justify-content: center
 @media ( max-width: 425px)
   .container
     max-width: 415px
@@ -208,7 +227,64 @@
         text-align: center
       &--link
         display: none
-
+  .trend
+    &__header
+      &--title
+        width: 101px
+        height: 36px
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+    &__card
+      width: 140px
+      height: 234px
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+      &--prise
+        width: 100%
+        justify-content: start
+        &__li
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 24px
+          margin-right: 9px
+        &__ico
+          width: 14px
+          height: 16px
+      &--img
+        width: 140px
+        height: 170px
+      &--mini
+        width: 140px
+        height: 170px
+        &__img
+          top: 40px
+          left: 57.5px
+          right: 57.5px
+        &__text
+          align-content: center
+          top: 87px
+          font-style: normal
+          font-weight: bold
+          font-size: 17px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.2px
 @media  ( max-width: 320px )
   .container
     max-width: 290px
@@ -247,3 +323,72 @@
         margin-right: 14px
       &--mine
         margin-top: 14px
+  .trend
+    &__header
+      align-items: center
+      margin-bottom: 36px
+      &--title
+        width: 101px
+        height: 36px
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        margin-right: 0
+        justify-content: space-between
+        min-width: 218px
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+    &__flex
+      justify-content: space-between
+    &__card
+      margin-right: 0
+      width: 140px
+      height: 234px
+      &--title
+        height: 20px
+        margin-top: 13px
+        margin-bottom: 3px
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+      &--prise
+        width: 100%
+        justify-content: start
+        &__li
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 24px
+          margin-right: 9px
+        &__ico
+          width: 14px
+          height: 16px
+      &--img
+        width: 140px
+        height: 170px
+      &--mini
+        width: 140px
+        height: 170px
+        &__img
+          top: 40px
+          left: 57.5px
+          right: 57.5px
+        &__text
+          align-content: center
+          top: 87px
+          font-style: normal
+          font-weight: bold
+          font-size: 17px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.2px

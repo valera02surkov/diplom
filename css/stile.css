@@ -298,7 +298,6 @@ img {
 .advant {
   display: flex;
   margin-top: 120px;
-  margin-bottom: 100px;
 }
 
 .advant__img {
@@ -381,6 +380,10 @@ img {
   max-width: 13px;
   max-height: 16px;
   margin-left: 19px;
+}
+
+.trend {
+  margin-top: 145px;
 }
 
 .trend__container {
@@ -582,6 +585,22 @@ img {
     margin-top: 24px;
     margin-bottom: 24px;
     width: 672px;
+    height: 150px;
+  }
+  .trend {
+    margin-top: 180px;
+  }
+  .trend__header {
+    justify-content: space-between;
+  }
+  .trend__header--title {
+    margin-right: 50px;
+  }
+  .trend__card {
+    margin-right: 30px;
+  }
+  .trend__flex {
+    justify-content: start;
   }
 }
 
@@ -684,6 +703,18 @@ img {
   .advant__info--link {
     width: 260px;
   }
+  .trend__header {
+    flex-direction: column;
+  }
+  .trend__header--title {
+    margin-right: 0;
+  }
+  .trend__header--text {
+    margin-top: 27.5px;
+  }
+  .trend__flex {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 425px) {
@@ -785,6 +816,73 @@ img {
   .advant__info--link {
     display: none;
   }
+  .trend__header--title {
+    width: 101px;
+    height: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #183B56;
+  }
+  .trend__header--text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A7184;
+  }
+  .trend__card {
+    width: 140px;
+    height: 234px;
+  }
+  .trend__card--title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .trend__card--prise {
+    width: 100%;
+    justify-content: start;
+  }
+  .trend__card--prise__li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 9px;
+  }
+  .trend__card--prise__ico {
+    width: 14px;
+    height: 16px;
+  }
+  .trend__card--img {
+    width: 140px;
+    height: 170px;
+  }
+  .trend__card--mini {
+    width: 140px;
+    height: 170px;
+  }
+  .trend__card--mini__img {
+    top: 40px;
+    left: 57.5px;
+    right: 57.5px;
+  }
+  .trend__card--mini__text {
+    align-content: center;
+    top: 87px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -832,6 +930,87 @@ img {
   }
   .advant__img--mine {
     margin-top: 14px;
+  }
+  .trend__header {
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .trend__header--title {
+    width: 101px;
+    height: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #183B56;
+  }
+  .trend__header--text {
+    margin-right: 0;
+    justify-content: space-between;
+    min-width: 218px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A7184;
+  }
+  .trend__flex {
+    justify-content: space-between;
+  }
+  .trend__card {
+    margin-right: 0;
+    width: 140px;
+    height: 234px;
+  }
+  .trend__card--title {
+    height: 20px;
+    margin-top: 13px;
+    margin-bottom: 3px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .trend__card--prise {
+    width: 100%;
+    justify-content: start;
+  }
+  .trend__card--prise__li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 9px;
+  }
+  .trend__card--prise__ico {
+    width: 14px;
+    height: 16px;
+  }
+  .trend__card--img {
+    width: 140px;
+    height: 170px;
+  }
+  .trend__card--mini {
+    width: 140px;
+    height: 170px;
+  }
+  .trend__card--mini__img {
+    top: 40px;
+    left: 57.5px;
+    right: 57.5px;
+  }
+  .trend__card--mini__text {
+    align-content: center;
+    top: 87px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
   }
 }
 /*# sourceMappingURL=stile.css.map */

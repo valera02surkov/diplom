@@ -1,5 +1,5 @@
 .header {
-  padding: 36px 0;
+  padding: 26px 0;
 }
 
 .header__mobail {
@@ -19,6 +19,7 @@
 }
 
 .header__logo {
+  margin-left: 4px;
   max-width: 90px;
   max-height: 28px;
   margin-right: 393px;
@@ -29,7 +30,8 @@
 }
 
 .header__text {
-  margin-right: 40px;
+  margin-left: 3px;
+  margin-right: 38px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -38,6 +40,7 @@
 }
 
 .header__text--contact {
+  margin-left: 3px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -54,7 +57,6 @@
   filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
   border-radius: 8px;
   color: #1565D8;
-  margin-left: 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -63,6 +65,9 @@
 }
 
 .selection {
+  margin-top: 38px;
+  max-width: 1280px;
+  max-height: 700px;
   position: relative;
   overflow: hidden;
 }
@@ -88,13 +93,13 @@
 
 .selection__button--ready {
   margin-top: 62px;
+  margin-left: 44px;
   width: 175px;
   height: 32px;
   color: #36B37E;
   background-color: rgba(54, 179, 126, 0.1);
   border: none;
   border-radius: 2000px;
-  margin-left: 27px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -110,7 +115,7 @@
   border: none;
   border-radius: 8px;
   margin: 52.5px 0 0 0;
-  margin-left: 27px;
+  margin-left: 45px;
 }
 
 .selection__button--sel__text {
@@ -132,7 +137,7 @@
   color: #183B56;
   max-width: 425px;
   margin: 28px 0 0 0;
-  margin-left: 27px;
+  margin-left: 43px;
 }
 
 .selection__text {
@@ -144,7 +149,7 @@
   color: #5A7184;
   max-width: 652px;
   margin: 28px 0 0 0;
-  margin-left: 27px;
+  margin-left: 45px;
 }
 
 .selection__text--blok {
@@ -171,7 +176,7 @@
   width: 446px;
   height: 36px;
   margin-top: 48.5px;
-  margin-left: 27px;
+  margin-left: 47px;
   margin-bottom: 46px;
 }
 
@@ -186,7 +191,7 @@
 .prise__box {
   max-width: 163px;
   height: 36px;
-  margin-right: 31px;
+  margin-right: 43px;
 }
 
 .prise__box--link {
@@ -223,7 +228,7 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -233,6 +238,7 @@ a {
 
 img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -301,7 +307,7 @@ img {
 }
 
 .advant__img {
-  left: 0;
+  margin-left: 8px;
   height: 490px;
   min-width: 320px;
   overflow: hidden;
@@ -361,11 +367,11 @@ img {
 }
 
 .advant__info--link {
+  margin-left: 2px;
   display: flex;
   align-items: center;
   width: 259px;
   height: 25px;
-  margin: 0;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -401,7 +407,7 @@ img {
   height: 60px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 678px;
+  margin-right: 687px;
   font-family: "HKGrotesk-bold",serif;
   font-style: normal;
   font-weight: bold;
@@ -437,6 +443,7 @@ img {
 }
 
 .trend__card {
+  margin-right: 31px;
   width: 260px;
   height: 441px;
   margin-bottom: 50px;
@@ -463,6 +470,46 @@ img {
   height: 32px;
 }
 
+.trend__card--photo {
+  object-position: 43% 50%;
+}
+
+.trend__card--photo__1 {
+  object-position: 50% -170%;
+  transform: scale(2, 2);
+  margin-left: 22px;
+}
+
+.trend__card--photo__2 {
+  object-position: 50% -65%;
+  transform: scale(-1.5, 1.5);
+  margin-left: -2px;
+}
+
+.trend__card--photo__3 {
+  object-position: 50% 75%;
+  margin-left: 8px;
+  transform: scale(1.5, 1.5);
+}
+
+.trend__card--photo__4 {
+  object-position: 50% -28%;
+  margin-left: 5px;
+  transform: scale(1.2, 1.2);
+}
+
+.trend__card--photo__5 {
+  object-position: 50% -193%;
+  margin-left: 25px;
+  transform: scale(2.3, 2.3);
+}
+
+.trend__card--photo__6 {
+  object-position: 50% -206%;
+  margin-left: 4px;
+  transform: scale(2, 2);
+}
+
 .trend__card--prise {
   display: flex;
   justify-content: space-between;
@@ -486,6 +533,10 @@ img {
   height: 32px;
 }
 
+.trend__card--prise__ico--ico {
+  object-fit: none;
+}
+
 .trend__card--mini {
   width: 260px;
   height: 350px;
@@ -498,11 +549,11 @@ img {
 .trend__card--mini__img {
   position: absolute;
   width: 28px;
-  height: 37px;
-  top: 120px;
-  left: 116px;
   right: 116px;
   bottom: 120px;
+  height: 31px;
+  top: 123px;
+  left: 114px;
 }
 
 .trend__card--mini__text {
@@ -522,13 +573,17 @@ img {
 }
 
 .trend__flex {
+  width: 100%;
+  padding-left: 12px;
+}
+
+.trend__flex--wrap {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .comit {
-  margin-top: 145px;
+  margin-top: 96px;
 }
 
 .comit__container {
@@ -547,6 +602,7 @@ img {
   object-fit: contain;
   height: 100%;
   width: 100%;
+  margin-left: 9px;
 }
 
 .comit__text {
@@ -708,6 +764,9 @@ img {
     width: 24px;
     background-color: #3A4C66;
   }
+  .selection {
+    margin-top: -5px;
+  }
   .selection__img {
     right: -160px;
     height: 100%;
@@ -722,6 +781,7 @@ img {
     letter-spacing: 0.2px;
     color: #183B56;
     margin-top: 24px;
+    margin-left: 27px;
   }
   .selection__text {
     max-width: 407px;
@@ -730,14 +790,25 @@ img {
     font-size: 18px;
     line-height: 32px;
     margin-top: 20px;
+    margin-left: 27px;
+  }
+  .selection__button--ready {
+    margin-left: 27px;
   }
   .selection__button--sel {
+    margin-left: 27px;
     margin-top: 35px;
   }
   .prise {
+    margin-left: 27px;
     margin-top: 40px;
   }
+  .prise__box {
+    margin-top: 3px;
+    margin-right: 37px;
+  }
   .advant {
+    margin-top: 74px;
     justify-content: center;
   }
   .advant__img {
@@ -768,6 +839,9 @@ img {
   .advant__info--link {
     width: 260px;
   }
+  .trend {
+    margin-top: 75px;
+  }
   .trend__header {
     flex-direction: column;
   }
@@ -775,10 +849,71 @@ img {
     margin-right: 0;
   }
   .trend__header--text {
-    margin-top: 27.5px;
+    width: 285px;
+    margin: 27.5px 0 auto;
+  }
+  .trend__card {
+    margin-left: 48px;
+    margin-right: 0;
+    width: 280px;
+  }
+  .trend__card--prise {
+    width: 100%;
+  }
+  .trend__card--img {
+    width: 280px;
+    height: 350px;
+  }
+  .trend__card--mini {
+    width: 280px;
+    height: 350px;
+    margin-left: 48px;
+  }
+  .trend__card--mini__img {
+    object-fit: none;
+    width: 37px;
+    height: 38px;
+    top: 118.5px;
+    left: 121.5px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .trend__card--title {
+    margin-top: 23px;
+  }
+  .trend__card--photo {
+    object-position: 100% 50%;
+  }
+  .trend__card--photo__1 {
+    object-position: 50% -85%;
+  }
+  .trend__card--photo__2 {
+    object-position: 50% -20%;
+  }
+  .trend__card--photo__4 {
+    object-position: 50% -10%;
+  }
+  .trend__card--photo__5 {
+    object-position: 50% -105%;
+  }
+  .trend__card--photo__6 {
+    object-position: 50% -125%;
   }
   .trend__flex {
-    justify-content: center;
+    margin-top: 54px;
+  }
+  .trend__flex--wrap {
+    justify-content: start;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .comit {
+    margin-top: 28px;
+  }
+  .comit__img--icon {
+    margin-left: 0;
   }
   .comit__container {
     width: 630px;

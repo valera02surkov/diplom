@@ -11,7 +11,7 @@
       height: 60px
       margin-top: 0
       margin-bottom: 0
-      margin-right: 678px
+      margin-right: 687px
       font-family: "HKGrotesk-bold",serif
       font-style: normal
       font-weight: bold
@@ -39,6 +39,7 @@
       line-height: 25px
       color: #5A7184
   &__card
+    margin-right: 31px
     width: 260px
     height: 441px
     margin-bottom: 50px
@@ -59,6 +60,32 @@
       margin-bottom: 3px
       margin-left: 10px
       height: 32px
+    &--photo
+      object-position: 43% 50%
+      &__1
+        object-position: 50% -170%
+        transform: scale(2, 2)
+        margin-left: 22px
+      &__2
+        object-position: 50% -65%
+        transform: scale(-1.5, 1.5)
+        margin-left: -2px
+      &__3
+        object-position: 50% 75%
+        margin-left: 8px
+        transform: scale(1.5, 1.5)
+      &__4
+        object-position: 50% -28%
+        margin-left: 5px
+        transform: scale(1.20, 1.20)
+      &__5
+        object-position: 50% -193%
+        margin-left: 25px
+        transform: scale(2.3, 2.3)
+      &__6
+        object-position: 50% -206%
+        margin-left: 4px
+        transform: scale(2, 2)
     &--prise
       display: flex
       justify-content: space-between
@@ -76,6 +103,8 @@
         margin-right: 10px
         width: 23px
         height: 32px
+        &--ico
+          object-fit: none
     &--mini
       width: 260px
       height: 350px
@@ -86,11 +115,11 @@
       &__img
         position: absolute
         width: 28px
-        height: 37px
-        top: 120px
-        left: 116px
         right: 116px
         bottom: 120px
+        height: 31px
+        top: 123px
+        left: 114px
       &__text
         top: 182px
         left: 23px
@@ -106,6 +135,8 @@
         letter-spacing: 0.2px
         color: #FFFFFF
   &__flex
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+    width: 100%
+    padding-left: 12px
+    &--wrap
+      width: 100%
+      display: flex

@@ -527,6 +527,10 @@ img {
   justify-content: space-between;
 }
 
+.comit {
+  margin-top: 145px;
+}
+
 .comit__container {
   width: 800px;
   min-height: 100%;
@@ -660,6 +664,9 @@ img {
   .trend__flex {
     justify-content: start;
   }
+  .comit {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 986px) {
@@ -772,6 +779,15 @@ img {
   }
   .trend__flex {
     justify-content: center;
+  }
+  .comit__container {
+    width: 630px;
+  }
+  .comit__text {
+    margin-top: 28px;
+  }
+  .comit__title {
+    margin-bottom: 33px;
   }
 }
 
@@ -1069,6 +1085,21 @@ img {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.2px;
+  }
+  .comit {
+    margin-top: 48px;
+  }
+  .comit__container {
+    width: 280px;
+  }
+  .comit__text {
+    margin-top: 14px;
+  }
+  .comit__title {
+    margin: auto;
+    width: 145px;
+    margin-top: 24px;
+    margin-bottom: 29px;
   }
 }
 /*# sourceMappingURL=stile.css.map */

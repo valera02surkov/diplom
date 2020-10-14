@@ -13,13 +13,14 @@
 }
 
 .header__nav--link {
+  display: flex;
+  margin-right: 50px;
   flex-wrap: nowrap;
-  width: 100%;
 }
 
 .header__logo {
-  width: 90px;
-  height: 28px;
+  max-width: 90px;
+  max-height: 28px;
   margin-right: 393px;
 }
 
@@ -36,10 +37,18 @@
   color: #183B56;
 }
 
+.header__text--contact {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
 .header__button {
   width: 101px;
+  height: 48px;
   padding: 13px 24px;
-  bottom: 26%;
   border: 2px solid #1565D8;
   box-sizing: border-box;
   filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
@@ -51,40 +60,6 @@
   font-size: 16px;
   line-height: 22px;
   cursor: pointer;
-}
-
-.prise {
-  display: flex;
-  margin-top: 49px;
-}
-
-.prise__box {
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.prise__button {
-  max-width: 36px;
-  max-height: 36px;
-  padding: 0;
-  margin-right: 8px;
-  border: 0.75px solid #1565D8;
-  border-radius: 12px;
-}
-
-.prise__link {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.prise__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #183B56;
 }
 
 .selection {
@@ -112,11 +87,20 @@
 }
 
 .selection__button--ready {
+  margin-top: 62px;
+  width: 175px;
+  height: 32px;
   color: #36B37E;
   background-color: rgba(54, 179, 126, 0.1);
   border: none;
   border-radius: 2000px;
-  margin-left: 20px;
+  margin-left: 27px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #36B37E;
 }
 
 .selection__button--sel {
@@ -125,8 +109,8 @@
   background: #183B56;
   border: none;
   border-radius: 8px;
-  margin: 53px 0 0 0;
-  margin-left: 20px;
+  margin: 52.5px 0 0 0;
+  margin-left: 27px;
 }
 
 .selection__button--sel__text {
@@ -148,7 +132,7 @@
   color: #183B56;
   max-width: 425px;
   margin: 28px 0 0 0;
-  margin-left: 20px;
+  margin-left: 27px;
 }
 
 .selection__text {
@@ -160,7 +144,7 @@
   color: #5A7184;
   max-width: 652px;
   margin: 28px 0 0 0;
-  margin-left: 20px;
+  margin-left: 27px;
 }
 
 .selection__text--blok {
@@ -183,12 +167,45 @@
 }
 
 .prise {
-  margin-left: 20px;
+  display: flex;
+  width: 446px;
+  height: 36px;
+  margin-top: 48.5px;
+  margin-left: 27px;
   margin-bottom: 46px;
 }
 
-.prise__text {
+.prise__button {
+  padding: 0;
+  margin-right: 8px;
+  width: 36px;
+  height: 36px;
+  border: none;
+}
+
+.prise__box {
+  max-width: 163px;
+  height: 36px;
+  margin-right: 31px;
+}
+
+.prise__box--link {
+  display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 163px;
+  height: 36px;
+}
+
+.prise__text {
+  font-family: "HKGrotesk-bold",serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 * {
@@ -288,7 +305,7 @@ img {
 .advant__img {
   left: 0;
   height: 490px;
-  width: 320px;
+  min-width: 320px;
   overflow: hidden;
   margin-right: 30px;
   border-radius: 8px;
@@ -316,10 +333,11 @@ img {
   max-width: 412px;
   height: 426px;
   margin-left: 57px;
-  margin-bottom: 54px;
 }
 
 .advant__info--text {
+  width: 392px;
+  height: 225px;
   margin-top: 24px;
   margin-bottom: 32px;
   font-family: Open Sans;
@@ -331,6 +349,8 @@ img {
 }
 
 .advant__info--title {
+  width: 412px;
+  height: 120px;
   margin-top: 10px;
   margin-bottom: 0;
   font-family: HK Grotesk;
@@ -343,6 +363,10 @@ img {
 }
 
 .advant__info--link {
+  display: flex;
+  align-items: center;
+  width: 259px;
+  height: 25px;
   margin: 0;
   font-style: normal;
   font-weight: 900;
@@ -351,13 +375,13 @@ img {
   text-align: center;
   color: #1565D8;
   display: flex;
-  align-items: center;
 }
 
 .advant__info--icon {
-  width: 13px;
-  height: 16px;
-  margin-left: 18px;
+  display: flex;
+  max-width: 13px;
+  max-height: 16px;
+  margin-left: 19px;
 }
 
 @media (max-width: 1400px) {
@@ -427,7 +451,14 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 748px;
+    max-width: 728px;
+  }
+  .header {
+    max-width: 650px;
+    margin: auto;
+  }
+  .header__logo {
+    margin: 0;
   }
   .header__nav {
     position: relative;
@@ -441,7 +472,7 @@ img {
   .header__mobail {
     display: flex;
     width: 22px;
-    right: 0;
+    right: 60px;
     height: 18px;
     align-items: center;
     flex-direction: column;
@@ -502,6 +533,16 @@ img {
   }
   .advant__info {
     margin-left: 0;
+  }
+  .advant__info--title {
+    margin-top: 0;
+    height: 60px;
+  }
+  .advant__info--text {
+    height: 144px;
+  }
+  .advant__info--link {
+    width: 260px;
   }
 }
 
@@ -608,7 +649,10 @@ img {
 
 @media (max-width: 320px) {
   .container {
-    max-width: 300px;
+    max-width: 290px;
+  }
+  .header__mobail {
+    right: 0;
   }
   .selection__img {
     left: -125%;
@@ -630,6 +674,24 @@ img {
     margin-left: 0;
     width: 320px;
     flex-wrap: wrap;
+  }
+  .advant__info--title {
+    height: 72px;
+    min-width: 290px;
+  }
+  .advant__info--text {
+    height: 196px;
+  }
+  .advant__img {
+    min-width: 290px;
+    max-width: 290px;
+  }
+  .advant__img--mini {
+    margin-top: 14px;
+    margin-right: 14px;
+  }
+  .advant__img--mine {
+    margin-top: 14px;
   }
 }
 /*# sourceMappingURL=stile.css.map */

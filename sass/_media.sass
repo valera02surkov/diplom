@@ -48,8 +48,12 @@
 
 @media ( max-width: 768px)
   .container
-    max-width: 748px
+    max-width: 728px
   .header
+    max-width: 650px
+    margin: auto
+    &__logo
+      margin: 0
     &__nav
       position: relative
       &--link
@@ -59,7 +63,7 @@
     &__mobail
       display: flex
       width: 22px
-      right: 0
+      right: 60px
       height: 18px
       align-items: center
       flex-direction: column
@@ -111,6 +115,13 @@
         height: 230px
     &__info
       margin-left: 0
+      &--title
+        margin-top: 0
+        height: 60px
+      &--text
+        height: 144px
+      &--link
+        width: 260px
 @media ( max-width: 425px)
   .container
     max-width: 415px
@@ -200,7 +211,10 @@
 
 @media  ( max-width: 320px )
   .container
-    max-width: 300px
+    max-width: 290px
+  .header
+    &__mobail
+      right: 0
   .selection
     &__img
       left: -125%
@@ -218,3 +232,18 @@
     margin-left: 0
     width: 320px
     flex-wrap: wrap
+  .advant
+    &__info
+      &--title
+        height: 72px
+        min-width: 290px
+      &--text
+        height: 196px
+    &__img
+      min-width: 290px
+      max-width: 290px
+      &--mini
+        margin-top: 14px
+        margin-right: 14px
+      &--mine
+        margin-top: 14px

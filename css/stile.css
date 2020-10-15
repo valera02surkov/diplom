@@ -1098,13 +1098,22 @@ img {
   .container {
     max-width: 290px;
   }
+  .header {
+    width: 272px;
+    padding-top: 20px;
+    padding-bottom: 53px;
+  }
   .header__mobail {
     right: 0;
+  }
+  .selection {
+    min-height: 899px;
   }
   .selection__img {
     left: -125%;
   }
   .selection__title {
+    margin-top: 16px;
     font-family: "HKGrotesk-bold",serif;
     margin-left: 10px;
   }
@@ -1112,15 +1121,34 @@ img {
     margin-left: 10px;
   }
   .selection__button--ready {
-    margin-left: 20%;
+    margin-top: 369px;
+    margin-left: 16%;
   }
   .selection__button--sel {
-    margin-left: 10%;
+    width: 257px;
+    height: 48px;
+    margin-left: 6%;
   }
   .prise {
-    margin-left: 0;
-    width: 320px;
+    margin-top: 16px;
+    margin-left: 8px;
+    width: 274px;
     flex-wrap: wrap;
+  }
+  .prise__button {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+  .prise__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .advant {
+    margin-top: 56px;
   }
   .advant__info--title {
     height: 72px;
@@ -1140,6 +1168,21 @@ img {
   .advant__img--mine {
     margin-top: 14px;
   }
+  .trend {
+    margin-top: 115px;
+  }
+  .trend__card--photo__6 {
+    object-position: 50% -95%;
+  }
+  .trend__flex {
+    margin-top: -5px;
+    padding: 0;
+  }
+  .trend__flex--wrap {
+    display: flex;
+    width: 290px;
+    margin-right: 0;
+  }
   .trend__header {
     align-items: center;
     margin-bottom: 36px;
@@ -1156,6 +1199,7 @@ img {
     color: #183B56;
   }
   .trend__header--text {
+    width: 218px;
     margin-right: 0;
     justify-content: space-between;
     min-width: 218px;
@@ -1169,8 +1213,10 @@ img {
     justify-content: space-between;
   }
   .trend__card {
-    margin-right: 0;
-    width: 140px;
+    margin-right: 5px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    max-width: 140px;
     height: 234px;
   }
   .trend__card--title {
@@ -1195,8 +1241,12 @@ img {
     margin-right: 9px;
   }
   .trend__card--prise__ico {
+    object-fit: cover;
     width: 14px;
-    height: 16px;
+    height: 32px;
+  }
+  .trend__card--prise__ico--ico {
+    object-fit: fill;
   }
   .trend__card--img {
     width: 140px;
@@ -1205,13 +1255,17 @@ img {
   .trend__card--mini {
     width: 140px;
     height: 170px;
+    margin-left: 5px;
   }
   .trend__card--mini__img {
-    top: 40px;
-    left: 57.5px;
+    top: 38px;
+    left: 52.5px;
     right: 57.5px;
   }
   .trend__card--mini__text {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
     align-content: center;
     top: 87px;
     font-style: normal;
@@ -1222,13 +1276,23 @@ img {
     letter-spacing: 0.2px;
   }
   .comit {
-    margin-top: 48px;
+    margin-top: 29px;
+  }
+  .comit__img {
+    width: 70px;
+    height: 81px;
   }
   .comit__container {
     width: 280px;
   }
   .comit__text {
-    margin-top: 14px;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.12px;
   }
   .comit__title {
     margin: auto;

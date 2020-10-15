@@ -17,13 +17,24 @@ $(document).ready(function () {
   function closeModal() {
      modalHeader.removeClass("modal-header--visible")
   };
-  var comitSwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
+  var comitSwiper = new Swiper('.comit__container', {
+    // Optional parameters
+    loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-})
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+  
+  var historySwiper = new Swiper('.history__swiper-container', {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.history-button--next',
+      prevEl: '.history-button--prev',
+    },
+  })
 });

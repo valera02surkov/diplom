@@ -1,0 +1,110 @@
+.history
+  position: relative
+  display: flex
+  height: 606px
+  margin-top: 83px
+  &__swiper-container
+    position: absolute
+    top: 133px
+    right: -11px
+    width: 667px
+    height: 475px
+  &__cards
+    display: flex
+    overflow: hidden
+    width: 672px
+  &__card
+    justify-content: center
+    width: 682px
+    height: 475px
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    margin-right: 20px
+    &--img
+      position: absolute
+      z-index: 9
+      width: 100%
+      height: 317px
+    &--prise
+      min-height: 178px
+      z-index: 10
+      position: absolute
+      background-color: #fff
+      bottom: 0
+      left: 15px
+      padding-top: 20px
+      padding-left: 20px
+      &__text
+        font-family: "hkgrotesk"
+        margin: 0 0 20px 0
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        letter-spacing: 0.2px
+        color: #183B56
+      &__link
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #1565D8
+  &__info
+    padding-left: 11px
+    top: 127px
+    position: absolute
+    width: 392px
+    height: 319px
+    &--button
+      margin-left: 7px
+      border: none
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      text-transform: uppercase
+      color: #36B37E
+    &--text
+      margin-top: 31px
+      margin-bottom: 1px
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: #5A7184
+    &--title
+      margin-top: 28px
+      margin-bottom: 24px
+      font-family: "hkgrotesk"
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: #183B56
+  &-button
+    position: absolute
+    z-index: 1100
+    top: 482px
+    border: none
+    width: 56px
+    height: 56px
+    cursor: pointer
+    border-radius: 2000px
+    &--next
+      padding: 0
+      left: 85px
+      background-image: url(../img/icon/arrow--next.svg)
+      object-fit: cover
+    &--prev
+      width: 54px
+      left: 9px
+      padding: 0
+      object-fit: cover
+      background-image: url(../img/icon/arrow--prev.svg)
+.history-container
+  position: relative
+  min-width: 1150px
+  max-width: 1150px

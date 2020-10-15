@@ -208,7 +208,78 @@
       margin-top: 28px
     &__title
       margin-bottom: 33px
+  .history-container
+    min-width: 728px
+    max-width: 728px
+  .history__swiper-container
+    top: 378px
+    right: 30px
+  .history
+    margin-top: 77px
+    &__cards
+    &__card
+      margin-right: 19px
+      margin-left: 6px
+      &--prise
+        padding-left: 7px
+        &__text
+          text-align: left
+    &__info
+      padding-top: 58px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      top: 0
+      width: 100%
+      height: 204px
+      &--button
+        margin-right: 20px
+      &--title
+        margin-top: 18px
+        margin-bottom: 0
+        margin-right: 12px
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        margin-top: 24px
+        margin-right: 13px
+        text-align: center
+        width: 568px
+    &-button
+      top: 288px
+      &--prev
+        left: 297px
+      &--next
+        left: 375px
 @media ( max-width: 425px)
+  .history-container
+    max-width: 415px
+    min-width: 415px
+  .history__swiper-container
+    height: 100%
+    max-width: 280px
+  .history
+    height: 1181px
+    margin-bottom: 40px
+    justify-content: center
+    &--info
+      &__text
+        width: 100%
+    &__card
+      margin: 0
+      min-height: 408px
+      max-width: 280px
+    &__cards
+      max-width: 280px
+      display: flex
+      flex-direction: column
+      height: 100%
   .container
     max-width: 415px
   .selection
@@ -353,6 +424,58 @@
           text-align: center
           letter-spacing: 0.2px
 @media  ( max-width: 320px )
+  .history-container
+    max-width: 290px
+    min-width: 290px
+  .history__swiper-container
+    top: 335px
+    width: 100%
+    right: 0
+  .history
+    margin-top: 0
+    &__card
+      right: 1px
+      width: 270px
+      margin-bottom: 22px
+      max-height: 407px
+      &--prise
+        top: 257px
+        max-height: 150px
+        padding-top: 18px
+        padding-left: 20px
+        left: 5px
+        &__text
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 24px
+      &--img
+        height: 277px
+    &__info
+      padding-top: 45px
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+      &--text
+        width: 100%
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+    &-button
+      top: 262px
+      width: 48px
+      height: 48px
+      object-fit: fill
+      left: 0
+      &--prev
+        top: 261px
+        left: 89px
+      &--next
+        left: 152px
+
   .container
     max-width: 290px
   .header
@@ -503,13 +626,14 @@
           letter-spacing: 0.2px
   .comit
     margin-top: 29px
+    height: 100%
     &__img
       width: 70px
       height: 81px
     &__container
       width: 280px
     &__text
-      margin-top: 8px
+      margin-top: 18px
       font-style: normal
       font-weight: normal
       font-size: 18px
@@ -521,3 +645,13 @@
       width: 145px
       margin-top: 24px
       margin-bottom: 29px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #183B56
+  .swiper-pogination
+  .displey-none
+    display: none

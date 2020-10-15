@@ -776,7 +776,7 @@ img {
     height: 100%;
   }
   .selection__title {
-    font-family: "HKGrotesk-bold",serif;
+    font-family: "hkgrotesk";
     max-width: 365px;
     font-style: normal;
     font-weight: bold;
@@ -939,7 +939,7 @@ img {
     left: -95%;
   }
   .selection__title {
-    font-family: "HKGrotesk-bold",serif;
+    font-family: "hkgrotesk";
     margin-top: 20px;
     font-style: normal;
     font-weight: bold;
@@ -1118,7 +1118,7 @@ img {
   }
   .selection__title {
     margin-top: 16px;
-    font-family: "HKGrotesk-bold",serif;
+    font-family: "hkgrotesk";
     margin-left: 10px;
   }
   .selection__text {

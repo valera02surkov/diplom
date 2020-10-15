@@ -70,6 +70,7 @@
   max-height: 700px;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .selection__img {
@@ -128,7 +129,7 @@
 }
 
 .selection__title {
-  font-family: "HKGrotesk-bold",serif;
+  font-family: "hkgrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -204,7 +205,7 @@
 }
 
 .prise__text {
-  font-family: "HKGrotesk-bold",serif;
+  font-family: "hkgrotesk";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -222,9 +223,12 @@ body {
 }
 
 @font-face {
-  font-family: "HKGrotesk-bold",serif;
-  src: url("fonts/HKGrotesk-bold") format("woff");
-  src: url("fonts/HKGrotesk-bold") format("woff2");
+  font-family: "hkgrotesk";
+  src: url("../fonts/hkgrotesk-regular.woff") format("woff"), url("../fonts/hkgrotesk-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-feature-settings: "locl" 0;
+  font-display: swap;
 }
 
 .container {
@@ -457,7 +461,7 @@ img {
 }
 
 .trend__card--title {
-  font-family: "HKGrotesk-bold",serif;
+  font-family: "hkgrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -562,7 +566,7 @@ img {
   right: 22px;
   buttom: 104px;
   position: absolute;
-  font-family: "HKGrotesk-bold",serif;
+  font-family: "hkgrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -608,7 +612,7 @@ img {
 .comit__text {
   margin-top: 24px;
   margin-bottom: 0;
-  font-family: "HKGrotesk-bold",serif;
+  font-family: "hkgrotesk";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -621,7 +625,7 @@ img {
 .comit__title {
   margin-top: 28px;
   margin-bottom: 53px;
-  font-family: "HKGrotesk-bold",serif;
+  font-family: "hkgrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

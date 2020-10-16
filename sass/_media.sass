@@ -13,6 +13,10 @@
 @media ( max-width: 1024px)
   .container
     max-width: 986px
+  .trend
+    &__flex
+      &--wrap
+        flex-wrap: wrap
   .header
     &__logo
       margin-right: 180px
@@ -153,7 +157,7 @@
         margin-right: 0
       &--text
         width: 285px
-        margin: 27.5px 0 auto
+        margin: 39.5px 0 auto
     &__card
       margin-left: 48px
       margin-right: 0
@@ -215,13 +219,16 @@
     top: 378px
     right: 30px
   .history
-    margin-top: 77px
+    margin-top: 53px
     &__cards
     &__card
       margin-right: 19px
       margin-left: 6px
+      &--img
+        width: 312px
       &--prise
-        padding-left: 7px
+        bottom: 8px
+        left: -2px
         &__text
           text-align: left
     &__info
@@ -236,6 +243,7 @@
       &--button
         margin-right: 20px
       &--title
+        max-width: 500px
         margin-top: 18px
         margin-bottom: 0
         margin-right: 12px
@@ -257,19 +265,51 @@
         left: 297px
       &--next
         left: 375px
+  .email
+    margin-top: 333px
+    height: 402px
+    display: flex
+    flex-direction: column
+    position: relative
+    &__container
+      height: 402px
+      max-width: 768px
+      margin: 0
+    &__imput
+      margin-top: 57px
+      margin-left: 161px
+    &__text
+      width: 436px
+      text-align: center
+      margin-top: 14px
+      margin-left: 166px
+    &__svg
+      object-fit: fill
+      height: 131%
+      width: 74%
+      left: -1px
+      bottom: 0
+      &--1
+        width: 41%
+        bottom: -294px
 @media ( max-width: 425px)
+  .displey-none
+    display: none
   .history-container
     max-width: 415px
     min-width: 415px
   .history__swiper-container
+    left: 0
+    right: 0
     height: 100%
     max-width: 280px
   .history
     height: 1181px
     margin-bottom: 40px
     justify-content: center
-    &--info
-      &__text
+    &__info
+      &--text
+        margin-right: 0
         width: 100%
     &__card
       margin: 0
@@ -280,6 +320,8 @@
       display: flex
       flex-direction: column
       height: 100%
+    &-button
+      left: 0
   .container
     max-width: 415px
   .selection
@@ -423,6 +465,42 @@
           line-height: 20px
           text-align: center
           letter-spacing: 0.2px
+  .comit
+    &__text
+      margin-left: 0
+      margin-right: 0
+      width: 415px
+    &__container
+      width: 425px
+  .email
+    margin-top: 321px
+    height: 402px
+    display: flex
+    position: relative
+    &__container
+      height: 402px
+      max-width: 425px
+      margin: 0
+    &__imput
+      min-height: 100px
+      width: 400px
+      margin: 57px 0 auto
+    &__input
+      width: 400px
+      height: 48px
+      &__icon
+        width: 16px
+        height: 18px
+        top: 0
+      &__button
+        bottom: 0
+    &__text
+      text-align: center
+      margin: 14px  0 auto
+    &__svg
+      display: none
+      &--1
+        display: none
 @media  ( max-width: 320px )
   .history-container
     max-width: 290px
@@ -630,8 +708,9 @@
       width: 70px
       height: 81px
     &__container
-      width: 280px
+      max-width: 280px
     &__text
+      max-width: 280px
       margin-top: 18px
       font-style: normal
       font-weight: normal
@@ -654,3 +733,63 @@
   .swiper-pogination
   .displey-none
     display: none
+  .comit
+    &__text
+      margin-left: 0
+      margin-right: 0
+      width: 415px
+    &__container
+      width: 425px
+  .email
+    margin-top: -13px
+    height: 414px
+    display: flex
+    position: relative
+    &__container
+      height: 402px
+      max-width: 320px
+      margin: 0
+    &__imput
+      min-height: 120px
+      width: 280px
+      margin: -1px 0 auto
+      top: -6px
+      left: 20px
+    &__input
+      border: none
+      border-radius: 8px
+      width: 280px
+      height: 48px
+      margin-bottom: 1px
+      &--img
+        left: 20px
+        top: 16px
+        width: 16px
+        height: 18px
+      &--button
+        border: none
+        border-radius: 8px
+        margin-top: 22px
+        width: 280px
+        height: 48px
+        left: 0
+        bottom: 0
+    &__text
+      width: 100%
+      text-align: center
+      margin: 8px 0 auto
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+      &--txt
+        margin: 28px 0 0
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+    &__svg
+      display: none
+      &--1
+        display: none

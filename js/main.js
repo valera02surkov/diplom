@@ -37,4 +37,13 @@ $(document).ready(function () {
       prevEl: '.history-button--prev',
     },
   })
+
+  $(".email__imput").validate({
+    messages: {
+      email: {
+        required: "Заполните поле",
+        email: "Формат почты @mail.ru"
+      }
+    },
+  });
 });

@@ -487,25 +487,26 @@
             новости из мира моды.
           </p>
         </div>
-        <div class="email__imput">
+        <form class="email__imput" action="send.php" method="POST">
           <input
             type="email"
-            name=""
+            name="email"
             class="email__input"
-            id=""
             placeholder="Ваш Email"
             minlength="2"
+            required
           />
           <img src="img/icon/mail.svg" class="email__input--img" />
-          <button class="email__input--button">
+          <button class="email__input--button" id="email">
             <span class="email__input--button__text">Подписаться</span>
           </button>
-        </div>
+        </form>
         <img src="img/Oval-2.svg" class="email__svg--1" alt="" />
       </div>
     </section>
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

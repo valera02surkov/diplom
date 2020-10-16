@@ -1,3 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+  font-family: "hkgrotesk";
+  src: url("../fonts/hkgrotesk-regular.woff") format("woff"), url("../fonts/hkgrotesk-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-feature-settings: "locl" 0;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header {
   padding: 26px 0;
 }
@@ -51,7 +83,7 @@
 .header__button {
   width: 101px;
   height: 48px;
-  padding: 13px 24px;
+  padding: 10px 24px;
   border: 2px solid #1565D8;
   box-sizing: border-box;
   filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
@@ -66,11 +98,15 @@
 
 .selection {
   margin-top: 38px;
-  max-width: 1280px;
+  width: 100%;
   max-height: 700px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+}
+
+.selection__container {
+  max-width: 1280px;
 }
 
 .selection__img {
@@ -93,8 +129,8 @@
 }
 
 .selection__button--ready {
-  margin-top: 62px;
-  margin-left: 44px;
+  margin-top: 60px;
+  margin-left: 108px;
   width: 175px;
   height: 32px;
   color: #36B37E;
@@ -115,8 +151,9 @@
   background: #183B56;
   border: none;
   border-radius: 8px;
-  margin: 52.5px 0 0 0;
-  margin-left: 45px;
+  margin: 50.5px 0 0 0;
+  margin-left: 116px;
+  cursor: pointer;
 }
 
 .selection__button--sel__text {
@@ -138,7 +175,7 @@
   color: #183B56;
   max-width: 425px;
   margin: 21px 0 0 0;
-  margin-left: 46px;
+  margin-left: 118px;
 }
 
 .selection__text {
@@ -149,8 +186,8 @@
   line-height: 36px;
   color: #5A7184;
   max-width: 652px;
-  margin: 34px 0 0 0;
-  margin-left: 45px;
+  margin: 36px 0 0 0;
+  margin-left: 116px;
 }
 
 .selection__text--blok {
@@ -176,8 +213,8 @@
   display: flex;
   width: 446px;
   height: 36px;
-  margin-top: 48.5px;
-  margin-left: 47px;
+  margin-top: 49.5px;
+  margin-left: 115px;
   margin-bottom: 46px;
 }
 
@@ -187,12 +224,13 @@
   width: 36px;
   height: 36px;
   border: none;
+  cursor: pointer;
 }
 
 .prise__box {
   max-width: 163px;
   height: 36px;
-  margin-right: 43px;
+  margin-right: 33px;
 }
 
 .prise__box--link {
@@ -212,38 +250,6 @@
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #183B56;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-@font-face {
-  font-family: "hkgrotesk";
-  src: url("../fonts/hkgrotesk-regular.woff") format("woff"), url("../fonts/hkgrotesk-regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-feature-settings: "locl" 0;
-  font-display: swap;
-}
-
-.container {
-  max-width: 1140px;
-  margin: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .modal-header {
@@ -412,7 +418,7 @@ img {
   height: 60px;
   margin-top: -7px;
   margin-bottom: 0;
-  margin-right: 687px;
+  margin-right: 680px;
   font-family: "hkgrotesk";
   font-style: normal;
   font-weight: bold;
@@ -430,6 +436,7 @@ img {
   margin-right: 38px;
   min-width: 285px;
   max-width: 285px;
+  margin-top: 10px;
 }
 
 .trend__header--txt:hover {
@@ -470,7 +477,7 @@ img {
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 3px;
   margin-left: 10px;
   height: 32px;
@@ -612,7 +619,8 @@ img {
 }
 
 .comit__text {
-  margin-top: 24px;
+  margin-top: 28px;
+  margin-left: 15px;
   margin-bottom: 0;
   font-family: "hkgrotesk";
   font-style: normal;
@@ -626,6 +634,7 @@ img {
 
 .comit__title {
   margin-top: 28px;
+  margin-left: 11px;
   margin-bottom: 53px;
   font-family: "hkgrotesk";
   font-style: normal;

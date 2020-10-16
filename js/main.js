@@ -10,12 +10,13 @@ $(document).ready(function () {
   var modalHeader = $(".modal-header")
   modalHeader.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  var modalopen = $(".modal-header")
 
   function openModal() { 
-    modalHeader.addClass("modal-header--visible")
+    modalopen.addClass("modal-header--visible")
   };
   function closeModal() {
-     modalHeader.removeClass("modal-header--visible")
+     modalopen.removeClass("modal-header--visible")
   };
   var comitSwiper = new Swiper('.comit__container', {
     // Optional parameters
@@ -38,12 +39,43 @@ $(document).ready(function () {
     },
   })
 
-  $(".email__imput").validate({
+  $(".form").each(function () {
+    $(this).validate({
     messages: {
+      phone: {
+        required: "Ваш Номер",
+        minlength: "номер содержит 11 символов"
+      },
       email: {
         required: "Заполните поле",
         email: "Формат почты @mail.ru"
-      }
+      },
+      password: {
+        required: "Введите пароль",
+        minlength: "пароль из 5 символов"
+      },
     },
   });
+});
+
+
+
+  var openModal2 = document.querySelector(".header__button");
+  openModal2.addEventListener("click", function () {
+    document
+      .querySelector(".modal__log")
+    .classList.toggle("modal__log--activ")
+  });
+  var modalButton = $(".header__button")
+  var closebutton = $(".modal__log--close")
+  modalButton.on("click", openModal2)
+  closebutton.on("click", closeModal2)
+  var modalLog = $(".modal__log")
+
+  function openModal2() {
+    modalLog.addClass("modal__log--activ")
+  }
+  function closeModal2() {
+    modalLog.removeClass("modal__log--activ")
+  }
 });

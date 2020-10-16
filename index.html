@@ -33,7 +33,7 @@
               <span class="header__text">Отзывы</span>
             </a>
             <a href="#">
-              <span class="header__text--contact">Контакты</span>
+              <span class="header__text--contact header__text">Контакты</span>
             </a>
           </div>
           <button class="button header__button">
@@ -48,6 +48,35 @@
       </section>
     </header>
     <!--/.header-->
+    <div class="modal__log">
+      <div class="modal__log--box">
+        <button class="modal__log--close">
+          <img src="img/close.svg" alt="" class="modal__log--close__svg" />
+        </button>
+        <form class="form modal__log--form">
+          <input
+            type="phone"
+            name="phone"
+            class="form modal__log--form__phone"
+            required
+            placeholder="Ваш номер телефона"
+          />
+          <input
+            type="password"
+            class="form modal__log--form__password"
+            name="password"
+            required
+            placeholder="Ваш пароль"
+          />
+          <button class="modal__log--form__button">
+            <span class="modal__log--form__button--text">Войти</span>
+          </button>
+          <div class="modal__log--registr">
+            <a href="#" class="modal__log--registr__text">Зарегистрироваться</a>
+          </div>
+        </form>
+      </div>
+    </div>
     <section class="container selection__container">
       <div class="selection">
         <div class="selection__img">
@@ -66,28 +95,22 @@
         </button>
         <div class="prise">
           <div class="prise__box">
-            <a href="#" class="prise__box--link">
-              <button class="prise__button">
-                <img src="img/icon/icon-cahe.svg" alt="" />
-              </button>
-              <span class="prise__text">Онлайн&nbsp;оплата</span>
-            </a>
+            <button class="prise__button">
+              <img src="img/icon/icon-cahe.svg" alt="" />
+            </button>
+            <span class="prise__text">Онлайн&nbsp;оплата</span>
           </div>
           <div class="prise__box">
-            <a href="#" class="prise__box--link">
-              <button class="prise__button">
-                <img src="img/icon/icon-garant.svg" alt="" />
-              </button>
-              <span class="prise__text">Гарантия</span>
-            </a>
+            <button class="prise__button">
+              <img src="img/icon/icon-garant.svg" alt="" />
+            </button>
+            <span class="prise__text">Гарантия</span>
           </div>
           <div class="prise__box">
-            <a href="#" class="prise__box--link">
-              <button class="prise__button">
-                <img src="img/icon/Icon-like.svg" alt="" />
-              </button>
-              <span class="prise__text"> Качество</span>
-            </a>
+            <button class="prise__button">
+              <img src="img/icon/Icon-like.svg" alt="" />
+            </button>
+            <span class="prise__text">Качество</span>
           </div>
         </div>
       </div>
@@ -152,13 +175,17 @@
           <div class="trend__flex--wrap">
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-1.png"
-                  class="trend__card--photo"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-1.png"
+                    class="trend__card--photo"
+                    alt=""
+                  />
+                </a>
               </div>
-              <h4 class="trend__card--title">Minimalist Style</h4>
+              <a href="#">
+                <h4 class="trend__card--title">Minimalist Style</h4>
+              </a>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$25.7</span>
                 <a href="#" class="trend__card--prise__ico">
@@ -172,13 +199,14 @@
             </div>
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-2.png"
-                  class="trend__card--photo trend__card--photo__1"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-2.png"
+                    class="trend__card--photo trend__card--photo__1"
+                    alt=""
+                /></a>
               </div>
-              <h4 class="trend__card--title">Luxury Gown</h4>
+              <a href="#"><h4 class="trend__card--title">Luxury Gown</h4></a>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$30.6</span>
                 <a href="#" class="trend__card--prise__ico">
@@ -192,12 +220,14 @@
             </div>
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-3.png"
-                  class="trend__card--photo trend__card--photo__2"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-3.png"
+                    class="trend__card--photo trend__card--photo__2"
+                    alt=""
+                /></a>
               </div>
+              <a href="#"></a>
               <h4 class="trend__card--title">Full Coloristy</h4>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$25.7 </span>
@@ -212,13 +242,14 @@
             </div>
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-4.png"
-                  class="trend__card--photo trend__card--photo__3"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-4.png"
+                    class="trend__card--photo trend__card--photo__3"
+                    alt=""
+                /></a>
               </div>
-              <h4 class="trend__card--title">Pinky Winky</h4>
+              <a href="#"> <h4 class="trend__card--title">Pinky Winky</h4></a>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$109</span>
                 <a href="#" class="trend__card--prise__ico">
@@ -234,13 +265,17 @@
           <div class="trend__flex--wrap">
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-5.png"
-                  class="trend__card--photo trend__card--photo__4"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-5.png"
+                    class="trend__card--photo trend__card--photo__4"
+                    alt=""
+                  />
+                </a>
               </div>
-              <h4 class="trend__card--title">Holiday Vibes</h4>
+              <a href="#">
+                <h4 class="trend__card--title">Holiday Vibes</h4>
+              </a>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$51.2</span>
                 <a href="#" class="trend__card--prise__ico">
@@ -254,13 +289,17 @@
             </div>
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-6.png"
-                  class="trend__card--photo trend__card--photo__5"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-6.png"
+                    class="trend__card--photo trend__card--photo__5"
+                    alt=""
+                  />
+                </a>
               </div>
-              <h4 class="trend__card--title">Swaggie Shaggy</h4>
+              <a href="#">
+                <h4 class="trend__card--title">Swaggie Shaggy</h4>
+              </a>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$81.3</span>
                 <a href="#" class="trend__card--prise__ico">
@@ -274,13 +313,17 @@
             </div>
             <div class="trend__card">
               <div class="trend__card--img">
-                <img
-                  src="img/trend-img-7.png"
-                  class="trend__card--photo trend__card--photo__6"
-                  alt=""
-                />
+                <a href="#">
+                  <img
+                    src="img/trend-img-7.png"
+                    class="trend__card--photo trend__card--photo__6"
+                    alt=""
+                  />
+                </a>
               </div>
-              <h4 class="trend__card--title">Red Formal</h4>
+              <a href="#">
+                <h4 class="trend__card--title">Red Formal</h4>
+              </a>
               <div class="trend__card--prise">
                 <span class="trend__card--prise__li">$66.8 </span>
                 <a href="#" class="trend__card--prise__ico">
@@ -487,17 +530,17 @@
             новости из мира моды.
           </p>
         </div>
-        <form class="email__imput" action="send.php" method="POST">
+        <form class="form email__imput--form email__imput">
           <input
             type="email"
             name="email"
             class="email__input"
             placeholder="Ваш Email"
-            minlength="2"
             required
+            minlength="2"
           />
           <img src="img/icon/mail.svg" class="email__input--img" />
-          <button class="email__input--button" id="email">
+          <button class="email__input--button">
             <span class="email__input--button__text">Подписаться</span>
           </button>
         </form>

@@ -3,7 +3,9 @@
 }
 
 body {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
+  outline: none;
 }
 
 @font-face {
@@ -32,6 +34,133 @@ img {
 
 hr {
   border: 1px solid #E5EAF4;
+}
+
+button {
+  outline: none;
+}
+
+.modal__log {
+  display: none;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 10000;
+}
+
+.modal__log::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 60%;
+  background-color: #1565D8;
+}
+
+.modal__log--box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: rgda(1, 1, 1, 1);
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  z-index: 1000;
+}
+
+.modal__log--close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border: none;
+  border-radius: 8px;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  z-index: 100;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: Transparent;
+}
+
+.modal__log--close__svg {
+  object-fit: fill;
+}
+
+.modal__log--form {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 12px;
+}
+
+.modal__log--form__phone {
+  position: relative;
+  border-radius: 8px;
+  margin: 35px auto 0;
+  width: 94%;
+  height: 46px;
+}
+
+.modal__log--form__password {
+  position: relative;
+  width: 94%;
+  height: 46px;
+  margin: 30px auto 0;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.modal__log--form__button {
+  border-radius: 8px;
+  border-color: blue;
+  width: 95%;
+  height: 36px;
+  margin: 10px auto 0;
+}
+
+.modal__log--form__button--text {
+  color: blue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.modal__log--form > .error {
+  position: relative;
+}
+
+.modal__log--registr {
+  justify-content: center;
+  margin: auto;
+}
+
+.modal__log--registr__text {
+  color: #183B56;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal__log--activ {
+  display: flex;
 }
 
 .email {
@@ -198,9 +327,10 @@ hr {
 }
 
 .header__button {
+  margin-left: -37px;
   width: 101px;
   height: 48px;
-  padding: 10px 24px;
+  padding: 11px 22px;
   border: 2px solid #1565D8;
   box-sizing: border-box;
   filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
@@ -229,8 +359,19 @@ hr {
 .selection__img {
   z-index: -10;
   position: absolute;
-  right: 0;
-  left: 0;
+  top: -444px;
+  bottom: -380px;
+  right: -546px;
+  left: 6px;
+}
+
+.selection__img--photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-position: -176px 102px;
+  transform: scaleX(0.5) scaleY(0.5);
+  object-fit: fill;
 }
 
 .selection__img::after {
@@ -238,16 +379,16 @@ hr {
   width: 100%;
   position: absolute;
   top: 0;
+  left: 399px;
   right: 0;
-  left: 0;
   bottom: 0;
   height: 100%;
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
 }
 
 .selection__button--ready {
+  margin-left: 115px;
   margin-top: 60px;
-  margin-left: 108px;
   width: 175px;
   height: 32px;
   color: #36B37E;
@@ -345,18 +486,11 @@ hr {
 }
 
 .prise__box {
+  display: flex;
+  align-items: center;
   max-width: 163px;
   height: 36px;
   margin-right: 33px;
-}
-
-.prise__box--link {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  max-width: 163px;
-  height: 36px;
 }
 
 .prise__text {
@@ -554,14 +688,6 @@ hr {
   min-width: 285px;
   max-width: 285px;
   margin-top: 10px;
-}
-
-.trend__header--txt:hover {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  color: #183B56;
 }
 
 .trend__header--txt {
@@ -927,26 +1053,6 @@ hr {
   background-image: url(../img/icon/button-left.svg);
 }
 
-.history-button--next:hover {
-  border: 2px solid #183B56;
-  box-sizing: border-box;
-  border-radius: 2000px;
-  transform: scale(1, 1);
-  background-position: center;
-  background-position-y: -2px;
-  background-image: url(../img/icon/button-right.svg);
-}
-
-.history-button--prev:hover {
-  border: 2px solid #183B56;
-  box-sizing: border-box;
-  border-radius: 2000px;
-  transform: scale(-1, -1);
-  background-position: center;
-  background-position-y: -3px;
-  background-image: url(../img/icon/button-right.svg);
-}
-
 .history-container {
   position: relative;
   min-width: 1150px;
@@ -1115,8 +1221,8 @@ hr {
     margin-top: 40px;
   }
   .prise__box {
-    margin-top: 3px;
-    margin-right: 37px;
+    margin-top: 5px;
+    margin-right: 23px;
   }
   .advant {
     margin-top: 74px;
@@ -1450,7 +1556,7 @@ hr {
   .advant__info--title {
     max-width: 280px;
     margin: auto;
-    font-family: HK Grotesk;
+    font-family: "hkgrotesk";
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -1954,6 +2060,48 @@ hr {
   }
   .email__svg--1 {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  button:hover {
+    opacity: 75%;
+  }
+  .header__text:hover {
+    border-bottom: 1px solid;
+  }
+  .advant__info--link:hover {
+    border-bottom: 2px solid;
+    border-color: #1565D8;
+  }
+  .history__card--prise__link:hover {
+    border-bottom: 2px solid;
+    border-color: #1565D8;
+  }
+  .history-button--next:hover {
+    border: 2px solid #183B56;
+    box-sizing: border-box;
+    border-radius: 2000px;
+    transform: scale(1, 1);
+    background-position: center;
+    background-position-y: -2px;
+    background-image: url(../img/icon/button-right.svg);
+  }
+  .history-button--prev:hover {
+    border: 2px solid #183B56;
+    box-sizing: border-box;
+    border-radius: 2000px;
+    transform: scale(-1, -1);
+    background-position: center;
+    background-position-y: -3px;
+    background-image: url(../img/icon/button-right.svg);
+  }
+  .trend__header--txt:hover {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #183B56;
   }
 }
 /*# sourceMappingURL=stile.css.map */

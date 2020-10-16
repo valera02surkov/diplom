@@ -123,8 +123,9 @@
     margin-left: 27px
     margin-top: 40px
     &__box
-      margin-top: 3px
-      margin-right: 37px
+      margin-top: 5px
+      margin-right: 23px
+
   .advant
     margin-top: 74px
     justify-content: center
@@ -389,7 +390,7 @@
       &--title
         max-width: 280px
         margin: auto
-        font-family: HK Grotesk
+        font-family: "hkgrotesk"
         font-style: normal
         font-weight: bold
         font-size: 28px
@@ -807,3 +808,46 @@
       display: none
       &--1
         display: none
+@media (min-width: 1200px)
+  button:hover
+    opacity: 75%
+  .header
+    &__text:hover
+      border-bottom: 1px solid
+  .advant
+    &__info
+      &--link:hover
+        border-bottom: 2px solid
+        border-color: #1565D8
+  .history
+    &__card
+      &--prise
+        &__link:hover
+          border-bottom: 2px solid
+          border-color: #1565D8
+  .history
+    &-button
+      &--next:hover
+        border: 2px solid #183B56
+        box-sizing: border-box
+        border-radius: 2000px
+        transform: scale(1 , 1)
+        background-position: center
+        background-position-y: -2px
+        background-image: url(../img/icon/button-right.svg)
+      &--prev:hover
+        border: 2px solid #183B56
+        box-sizing: border-box
+        border-radius: 2000px
+        transform: scale(-1 , -1)
+        background-position: center
+        background-position-y: -3px
+        background-image: url(../img/icon/button-right.svg)
+  .trend
+    &__header
+      &--txt:hover
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        color: #183B56

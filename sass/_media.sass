@@ -10,9 +10,6 @@
   .selection
     max-width: 1100px
     overflow: hidden
-@media ( max-width: 1024px)
-  .container
-    max-width: 986px
   .trend
     &__flex
       &--wrap
@@ -21,6 +18,9 @@
     &__logo
       margin-right: 180px
   .selection
+    &__img
+      &::after
+        left: 340px
     &__button
       &--ready
         z-index: 10
@@ -80,8 +80,94 @@
           transform: translateX(-50%)
           width: 80%
   .comit
-    margin-top: 1379px
+    margin-top: 487px
   .history
+    margin-top: 30px
+    &__swiper-container
+      margin-left: 30px
+    &__card
+      width: 280px
+  .email
+    &__container
+      max-width: 1024px
+    &__imput
+      margin-left: -39px
+@media ( max-width: 1024px)
+  .container
+    max-width: 986px
+  .trend
+    &__flex
+      &--wrap
+        flex-wrap: wrap
+  .header
+    &__logo
+      margin-right: 180px
+  .selection
+    &__img
+      &::after
+        left: 340px
+    &__button
+      &--ready
+        z-index: 10
+  .advant
+    flex-wrap: wrap
+    justify-content: center
+    &__img
+      width: 322px
+      height: 490px
+      &--mine
+        width: 320px
+        height: 230px
+      &--mini
+        width: 320px
+        height: 230px
+    &__info
+      margin-top: 40px
+      max-width: 672px
+      height: 277px
+      &--title
+        width: 565px
+        margin-top: 40px
+      &--text
+        margin-top: 24px
+        margin-bottom: 24px
+        width: 672px
+        height: 150px
+  .trend
+    margin-top: 180px
+    &__flex
+      padding: 0
+      &--wrap
+        justify-content: center
+    &__header
+      justify-content: space-between
+      &--title
+        margin-right: 50px
+    &__card
+      width: 200px
+      margin-right: 20px
+      &--img
+        width: 200px
+      &--photo
+        transform: none
+        &__1
+          transform: none
+          margin-left: 0
+      &--prise
+        width: 100%
+      &--mini
+        min-width: 200px
+        &__img
+          left: 50%
+          transform: translateX(-50%)
+        &__text
+          left: 50%
+          transform: translateX(-50%)
+          width: 80%
+  .comit
+    margin-top: 487px
+  .history
+    margin-top: 30px
     &__swiper-container
       margin-left: 30px
     &__card
@@ -92,10 +178,83 @@
     &__imput
       margin-left: -39px
 @media  ( max-width: 986px )
-  container: 650px
-@media ( max-width: 768px)
   .container
-    max-width: 728px
+    max-width: 976px
+  .comit
+    margin-top: 500px
+  .email
+    &__container
+      width: 100%
+  .trend
+    &__flex
+      margin: auto
+      &--wrap
+        margin: auto
+        width: 100%
+  .history
+    display: flex
+    margin: auto
+    flex-direction: column
+    align-items: center
+    margin-top: 42px
+    max-width: 976px
+    height: 887px
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 118px
+      width: 100%
+      height: 204px
+    &__swiper-container
+      max-width: 615px
+      display: flex
+      margin: 26px auto
+      justify-content: space-between
+  .email
+    &__container
+      max-width: 100%
+@media  ( max-width: 940px )
+  .container
+    max-width: 930px
+  .comit
+    width: 100%
+    margin-top: 500px
+  .trend
+    &__flex
+      margin: auto
+      &--wrap
+        margin: auto
+        width: 100%
+  .history
+    display: flex
+    margin: auto
+    flex-direction: column
+    align-items: center
+    margin-top: 42px
+    max-width: 100%
+    height: 887px
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 118px
+      width: 100%
+      height: 204px
+      &--text
+        align-items: center
+        text-align: center
+        max-width: 85%
+    &__swiper-container
+      max-width: 615px
+      display: flex
+      margin: 26px auto
+      justify-content: space-between
+  .email
+    &__container
+      max-width: 100%
   .header
     max-width: 650px
     margin: auto
@@ -167,10 +326,11 @@
     margin-top: 74px
     justify-content: center
     &__img
-      width: 322px
+      max-width: 322px
       height: 490px
       margin-right: 30px
       flex-wrap: nowrap
+      &--photo
       &--mine
         margin-left: 0
         width: 320px
@@ -261,7 +421,7 @@
     &__title
       margin-bottom: 33px
   .history-container
-    min-width: 728px
+    min-width: 100%
     max-width: 728px
   .history
     margin-top: 42px
@@ -283,19 +443,19 @@
         height: 56px
     &__swiper-container
       width: 672px
-      margin-left: 23px
-      margin-top: 123px
       display: flex
+      margin: 4px auto
       justify-content: space-between
     &__cards
     &__card
-      width: 322px
+      width: 300px
       &--img
         width: 322px
         &__img
           min-width: 100%
           max-width: 100%
       &--prise
+        width: 322px
         bottom: 8px
         left: 10px
         &__text
@@ -305,7 +465,276 @@
       flex-direction: column
       align-items: center
       justify-content: space-between
-      top: 0
+      margin-bottom: 118px
+      width: 100%
+      height: 204px
+      &--button
+        margin-right: 12px
+      &--title
+        max-width: 500px
+        margin-top: 23px
+        margin-bottom: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        margin-top: 24px
+        margin-right: 13px
+        text-align: center
+        width: 568px
+  .email
+    margin-top: -4px
+    height: 402px
+    display: flex
+    flex-direction: column
+    position: relative
+    &__container
+      max-width: 100%
+      height: 402px
+      margin: 0
+    &__imput
+      margin-top: 57px
+      margin-left: 161px
+    &__text
+      width: 436px
+      text-align: center
+      margin-top: 14px
+      margin-left: 166px
+    &__svg
+      object-fit: fill
+      height: 131%
+      width: 74%
+      left: -1px
+      bottom: 0
+      &--1
+        width: 41%
+        bottom: -294px
+@media ( max-width: 768px)
+  .container
+    max-width: 728px
+  .header
+    max-width: 650px
+    margin: auto
+    &__logo
+      margin: 0
+    &__nav
+      position: relative
+      &--link
+        display: none
+    &__button
+      display: none
+    &__mobail
+      display: flex
+      width: 22px
+      right: 0
+      height: 18px
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      border: none
+      &--button
+        height: 2px
+        width: 24px
+        background-color: #3A4C66
+  .selection
+    margin-top: 22px
+    &__img
+      top: -0px
+      right: -160px
+      height: 102%
+      &--photo
+        object-position: 17px -13px
+        transform: none
+      &::after
+        left: 0
+    &__title
+      font-family: "hkgrotesk"
+      max-width: 365px
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: #183B56
+      margin-top: 19px
+      margin-left: 28px
+    &__text
+      max-width: 407px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      margin-top: 25px
+      margin-left: 27px
+    &__button
+      &--ready
+        margin-top: 36px
+        margin-left: 28px
+      &--sel
+        margin-left: 29px
+        margin-top: 36px
+  .prise
+    margin-top: 36px
+    margin-left: 28px
+    &__box
+      margin-top: 5px
+      margin-right: 22px
+  .advant
+    margin-top: 74px
+    justify-content: center
+    &__img
+      max-width: 322px
+      height: 490px
+      margin-right: 30px
+      flex-wrap: nowrap
+      &--photo
+      &--mine
+        margin-left: 0
+        width: 320px
+        height: 230px
+      &--mini
+        width: 320px
+        height: 230px
+    &__info
+      margin-top: 36px
+      margin-left: 0
+      &--title
+        margin-top: 0
+        height: 60px
+      &--text
+        margin-top: 30px
+        height: 144px
+      &--link
+        width: 260px
+  .trend
+    margin-top: 85px
+    &__header
+      flex-direction: column
+      &--title
+        margin-right: 0
+      &--text
+        width: 285px
+        margin: 32.5px 0 auto
+    &__card
+      margin-left: 48px
+      margin-right: 0
+      margin-bottom: 48px
+      width: 280px
+      &--prise
+        width: 100%
+        &__ico
+          margin-top: 7px
+      &--img
+        width: 280px
+        height: 350px
+      &--mini
+        width: 280px
+        height: 350px
+        margin-left: 48px
+        &__text
+          top: 180px
+          width: 78%
+      &--title
+        margin-top: 18px
+      &--photo
+        object-position: 100% 50%
+        &__1
+          object-position: 50% -85%
+          transform: scale(2, 2)
+          margin-left: 22px
+        &__2
+          object-position: 50% -26%
+          transform: scale(-1.5, 1.5)
+          margin-left: -21px
+        &__3
+          object-position: 50% 76%
+          transform: scale(1.25, 1.25)
+          margin-left: -12px
+        &__4
+          object-position: 50% 9%
+          margin-left: -7px
+          transform: scale(1.1, 1.1)
+        &__5
+          object-position: 50% -92%
+          margin-left: 14px
+          transform: scale(2, 2)
+        &__6
+          object-position: 50% -99%
+          margin-left: -8px
+          transform: scale(1.75, 1.75)
+    &__flex
+      margin-left: 0
+      margin-top: 55px
+      width: 668px
+      &--wrap
+        padding-left: 12px
+        justify-content: space-between
+        width: 100%
+        flex-wrap: wrap
+  .comit
+    margin-top: 1491px
+    &__img
+      &--icon
+        margin-left: 0
+    &__container
+      width: 630px
+    &__text
+      margin-left: 0
+      margin-top: 28px
+    &__title
+      margin-bottom: 33px
+  .history-container
+    min-width: 100%
+    max-width: 728px
+  .history
+    margin-top: 42px
+    height: 887px
+    display: flex
+    flex-direction: column
+    &-button
+      margin-top: 17px
+      width: 134px
+      display: flex
+      justify-content: space-between
+      &--prev
+        object-fit: none
+        width: 56px
+        height: 56px
+      &--next
+        object-fit: none
+        width: 56px
+        height: 56px
+    &__swiper-container
+      max-width: 672px
+      display: flex
+      margin: 4px auto
+      margin-left: 43px
+      justify-content: space-between
+    &__cards
+      width: 100%
+    &__card
+      width: 322px
+      &--img
+        width: 322px
+        &__img
+          min-width: 100%
+          max-width: 100%
+      &--prise
+        width: 322px
+        bottom: 8px
+        left: 10px
+        &__text
+          text-align: left
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 118px
       width: 100%
       height: 204px
       &--button
@@ -353,22 +782,316 @@
       &--1
         width: 41%
         bottom: -294px
-@media ( max-width: 425px)
+@media   ( max-width: 700px )
+  .container
+    max-width: 690px
+    margin: auto
+  .advant
+    width: 100%
+    &__img
+      width: 90%
+      margin: 0 0 20px 0
+      &--photo
+        display: flex
+        max-width: 480px
+        justify-content: space-between
+      &--mini
+        width: 80%
+        margin-right: 30px
+      &--mine
+        width: 80%
+    &__info
+      max-width: 100%
+      &--title
+        width: 100%
+        height: 113px
+      &--text
+        width: 100%
+  .trend
+    &__flex
+      align-items: center
+      max-width: 610px
+      &--wrap
+        width: 300px
+        padding: 0
+    &__card
+      width: 48%
+      margin: 0 0 20px 0
+      &--img
+        width: 100%
+      &--mini
+        min-width: 140px
+        height: 170px
+        margin-left: -1px
+        &__img
+  .comit
+    justify-content: center
+    width: 100%
+    &__text
+      max-width: 620px
+      margin-left: 0
+      font-family: "hkgrotesk"
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 42px
+      text-align: center
+      letter-spacing: 0.133333px
+      color: #183B56
+  .history
+    &__swiper-container
+      max-width: 100%
+      height: 1200px
+      margin-left: 0px
+      flex-wrap: wrap
+      display: flex
+      flex-direction: column
+    &__card
+      margin-right: 22px
+@media   ( max-width: 625px )
+  .container
+    max-width: 610px
   .displey-none
     display: none
   .history-container
-    max-width: 415px
-    min-width: 415px
+    max-width: 610px
   .history__swiper-container
     left: 0
     right: 0
     height: 100%
     max-width: 280px
+    margin-right: 0
+  .history
+    height: 1220px
+    margin-bottom: 40px
+    justify-content: center
+    &__info
+      &--text
+        margin-right: 0
+        width: 100%
+    &__card
+      margin: 0 auto 40px
+      min-height: 408px
+      max-width: 580px
+    &__cards
+      max-width: 280px
+      display: flex
+      flex-direction: column
+      height: 100%
+    &-button
+      left: 0
+  .selection
+    min-height: 860px
+    &__container
+      width: 100%
+      margin: auto
+    &__img
+      flex-basis: 100%
+      left: -95%
+    &__title
+      margin: auto
+      font-family: "hkgrotesk"
+      margin-top: 20px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &__text
+      margin: auto
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &__button
+      &--sel
+        margin-top: 24px
+        margin-left: 33%
+      &--ready
+        width: 196px
+        margin-left: 33%
+        margin-right: 25%
+        margin-top: 381px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+  .prise
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-left: 36px
+    &__box
+      margin: auto
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+  .advant
+    width: 100%
+    &__img
+      width: 290px
+      height: 300px
+      margin: 0
+      &--photo
+        width: 52%
+        display: flex
+      &--mine
+        margin: 18px 0 0 0
+        width: 138px
+        height: 97px
+      &--mini
+        margin: 18px 18px 0 0
+        width: 138px
+        height: 97px
+    &__info
+      min-width: 100%
+      margin-left: 0
+      &--title
+        height: 64px
+        max-width: 280px
+        margin: auto
+        font-family: "hkgrotesk"
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        max-width: 280px
+        margin: 20px auto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &--link
+        display: none
+  .trend
+    &__header
+      &--title
+        width: 101px
+        height: 36px
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+    &__card
+      width: 140px
+      height: 234px
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+      &--prise
+        width: 100%
+        justify-content: start
+        &__li
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 24px
+          margin-right: 9px
+        &__ico
+          margin-top: 0
+          width: 14px
+          height: 16px
+          &--ico
+            object-fit: fill
+      &--img
+        width: 140px
+        height: 170px
+      &--mini
+        width: 140px
+        height: 170px
+        &__img
+          top: 40px
+        &__text
+          align-content: center
+          top: 87px
+          font-style: normal
+          font-weight: bold
+          font-size: 17px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.2px
+  .comit
+    margin-top: 540px
+    &__text
+      margin-left: 0
+      margin-right: 0
+      width: 415px
+    &__container
+      width: 425px
+  .email
+    height: 402px
+    display: flex
+    position: relative
+    &__container
+      height: 402px
+      max-width: 425px
+      margin: 0
+    &__imput
+      position: relative
+      min-height: 100px
+      width: 400px
+      margin-left: 50%
+      transform: translateX(-50%)
+    &__input
+      width: 400px
+      height: 52px
+      &__icon
+        width: 16px
+        height: 18px
+        top: 0
+      &--button
+        top: 26%
+        transform: translateY(-50%)
+    &__text
+      margin-left: 50%
+      transform: translateX(-50%)
+      text-align: center
+    &__svg
+      display: none
+      &--1
+        display: none
+@media  ( max-width: 615px )
+  .container
+    max-width: 600px
+  .displey-none
+    display: none
+  .history-container
+    max-width: 595px
+  .history__swiper-container
+    left: 0
+    right: 0
+    height: 100%
+    max-width: 280px
+    margin-top: 60px
+    min-height: 1000px
   .history
     height: 1181px
     margin-bottom: 40px
     justify-content: center
     &__info
+      margin-top: 200px
       &--text
         margin-right: 0
         width: 100%
@@ -383,12 +1106,9 @@
       height: 100%
     &-button
       left: 0
-  .container
-    max-width: 415px
   .selection
     &__img
       flex-basis: 100%
-      left: -95%
     &__title
       font-family: "hkgrotesk"
       margin-top: 20px
@@ -469,6 +1189,8 @@
       &--link
         display: none
   .trend
+    &__flex
+      width: 100%
     &__header
       &--title
         width: 101px
@@ -527,6 +1249,7 @@
           text-align: center
           letter-spacing: 0.2px
   .comit
+    margin-top: 600px
     &__text
       margin-left: 0
       margin-right: 0
@@ -545,10 +1268,224 @@
     &__imput
       min-height: 100px
       width: 400px
-      margin: 57px 0 auto
     &__input
       width: 400px
-      height: 48px
+      height: 56px
+      &__icon
+        width: 16px
+        height: 18px
+        top: 0
+      &--button
+        top: 28%
+        bottom: 0
+    &__text
+      text-align: center
+    &__svg
+      display: none
+      &--1
+        display: none
+@media ( max-width: 425px)
+  .displey-none
+    display: none
+  .history-container
+    max-width: 415px
+  .history__swiper-container
+    left: 0
+    right: 0
+    height: 100%
+    max-width: 280px
+  .history
+    height: 1181px
+    margin-bottom: 40px
+    justify-content: center
+    &__info
+      &--text
+        margin-right: 0
+        width: 100%
+    &__card
+      margin: 0
+      min-height: 408px
+      max-width: 280px
+    &__cards
+      max-width: 280px
+      display: flex
+      flex-direction: column
+      height: 100%
+    &-button
+      left: 0
+  .container
+    max-width: 415px
+  .selection
+    min-height: 880px
+    &__img
+      flex-basis: 175%
+    &__title
+      font-family: "hkgrotesk"
+      margin-top: 20px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &__text
+      margin-top: 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &__button
+      &--sel
+        margin-top: 24px
+        margin-left: 20%
+      &--ready
+        width: 196px
+        margin-left: 25%
+        margin-right: 25%
+        margin-top: 381px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+  .prise
+    width: 320px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    &__box
+      margin: auto
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+  .advant
+    &__img
+      width: 290px
+      height: 300px
+      margin: 0
+      &--photo
+        width: 77%
+        display: flex
+      &--mine
+        margin: 18px 0 0 0
+        width: 150px
+        height: 97px
+      &--mini
+        margin: 18px 18px 0 0
+        width: 150px
+        height: 97px
+    &__info
+      max-width: 415px
+      margin-left: 0
+      &--title
+        max-width: 280px
+        margin: auto
+        font-family: "hkgrotesk"
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        max-width: 280px
+        margin: 20px auto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &--link
+        display: none
+  .trend
+    &__header
+      &--title
+        width: 101px
+        height: 36px
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+    &__card
+      width: 140px
+      height: 234px
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+      &--photo
+        &__6
+          object-position: 50% -80%
+      &--prise
+        width: 100%
+        justify-content: start
+        &__li
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 24px
+          margin-right: 9px
+        &__ico
+          width: 14px
+          height: 16px
+      &--img
+        width: 140px
+        height: 170px
+      &--mini
+        margin-top: 6px
+        width: 140px
+        height: 170px
+        &__img
+          top: 40px
+          left: 50%
+        &__text
+          align-content: center
+          top: 87px
+          font-style: normal
+          font-weight: bold
+          font-size: 17px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.2px
+  .comit
+    &__text
+      margin-left: 0
+      margin-right: 0
+      width: 415px
+    &__container
+      width: 425px
+  .email
+    margin-top: 321px
+    height: 402px
+    display: flex
+    position: relative
+    &__container
+      height: 402px
+      max-width: 425px
+      margin: 0
+    &__imput
+      min-height: 100px
+      width: 400px
+    &__input
+      max-width: 400px
+      height: 56px
+      border: none
+      border-radius: 8px
       &__icon
         width: 16px
         height: 18px
@@ -557,12 +1494,12 @@
         bottom: 0
     &__text
       text-align: center
-      margin: 14px  0 auto
+      max-width: 400px
     &__svg
       display: none
       &--1
         display: none
-@media  ( max-width: 320px )
+@media  ( max-width: 435px )
   .history-container
     max-width: 290px
     min-width: 290px
@@ -787,6 +1724,335 @@
     &__text
       max-width: 280px
       margin-top: 18px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.12px
+    &__title
+      margin: auto
+      width: 145px
+      margin-top: 24px
+      margin-bottom: 29px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #183B56
+  .swiper-pogination
+  .displey-none
+    display: none
+  .comit
+    &__text
+      margin-left: 0
+      margin-right: 0
+      width: 415px
+    &__container
+      width: 425px
+  .email
+    margin-top: 56px
+    height: 414px
+    display: flex
+    position: relative
+    &__container
+      height: 402px
+      max-width: 320px
+      margin: 0
+    &__imput
+      min-height: 120px
+      width: 280px
+      margin: -1px 0 auto
+      top: -6px
+      left: 20px
+    &__input
+      border: none
+      border-radius: 8px
+      width: 280px
+      height: 48px
+      margin-bottom: 1px
+      &--img
+        left: 20px
+        top: 16px
+        width: 16px
+        height: 18px
+      &--button
+        border: none
+        border-radius: 8px
+        margin-top: 22px
+        width: 280px
+        height: 48px
+        left: 0
+        bottom: 0
+    &__text
+      width: 100%
+      text-align: center
+      margin: 8px 0 auto
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+      &--txt
+        margin: 28px 0 0
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+    &__svg
+      display: none
+      &--1
+        display: none
+@media  ( max-width: 320px )
+  .history-container
+    max-width: 290px
+    min-width: 290px
+  .history__swiper-container
+    top: -44px
+    width: 100%
+    right: 0
+  .history
+    height: 1181px
+    margin-top: -87px
+    &__card
+      right: 1px
+      width: 270px
+      margin-bottom: 22px
+      max-height: 407px
+      &--prise
+        top: 257px
+        max-height: 150px
+        padding-top: 18px
+        padding-left: 20px
+        left: 5px
+        &__text
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 24px
+      &--img
+        height: 277px
+    &__info
+      padding-top: 45px
+      &--title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+      &--text
+        margin-top: 18px
+        max-width: 280px
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+    &-button
+      top: 262px
+      width: 112px
+      object-fit: fill
+      left: 0
+      &--prev
+        width: 48px
+        height: 48px
+        top: 261px
+        left: 89px
+        background-position: -5px -5px
+      &--next
+        background-position: -5px -8px
+        width: 48px
+        height: 48px
+        left: 152px
+  .container
+    max-width: 290px
+  .header
+    width: 272px
+    padding-top: 20px
+    padding-bottom: 53px
+    &__mobail
+      right: 0
+  .selection
+    min-height: 934px
+    margin-top: -13px
+    width: 320px
+    left: -19px
+    &__container
+      position: relative
+    &__img
+      border-radius: 8px
+      width: 320px
+      height: 934px
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      transform: none
+      &--photo
+        top: -17px
+        left: -160px
+        transform: scale(3.4,1)
+    &__title
+      margin-top: 13px
+      font-family: "hkgrotesk"
+      margin-left: -7px
+    &__text
+      margin-top: 24px
+      margin-left: 24px
+      width: 280px
+    &__button
+      &--ready
+        margin-top: 376px
+        margin-left: 21%
+      &--sel
+        width: 257px
+        height: 48px
+        margin-left: 11%
+        &__text
+          font-style: normal
+          font-weight: bold
+          font-size: 16px
+          line-height: 22px
+  .prise
+    margin-top: 16px
+    margin-left: 19px
+    width: 292px
+    flex-wrap: wrap
+    &__button
+      margin-right: 8px
+      width: 24px
+      height: 24px
+    &__text
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+  .advant
+    margin-top: 28px
+    &__info
+      &--title
+        height: 72px
+        min-width: 290px
+      &--text
+        height: 196px
+    &__img
+      min-width: 290px
+      max-width: 290px
+      &--mini
+        margin-top: 14px
+        margin-right: 14px
+      &--mine
+        margin-top: 14px
+  .trend
+    margin-top: 115px
+    &__card
+      &--photo
+        &__6
+          object-position: 50% -95%
+    &__flex
+      margin-top: -5px
+      padding: 0
+      &--wrap
+        display: flex
+        width: 290px
+        margin-right: 0
+    &__header
+      align-items: center
+      margin-bottom: 36px
+      &--title
+        margin-top: 1px
+        margin-left: 1px
+        width: 101px
+        height: 36px
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+      &--text
+        width: 218px
+        margin: 26.5px 0 auto
+        justify-content: space-between
+        min-width: 218px
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+    &__flex
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+    &__card
+      margin-right: 10px
+      margin-left: 0
+      margin-bottom: 20px
+      max-width: 140px
+      height: 234px
+      &--title
+        height: 20px
+        margin-top: 13px
+        margin-bottom: 0
+        margin-left: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+      &--prise
+        width: 100%
+        justify-content: start
+        &__li
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 24px
+          margin-right: 9px
+        &__ico
+          object-fit: cover
+          width: 14px
+          height: 32px
+          &--ico
+            object-fit: fill
+      &--img
+        width: 140px
+        height: 170px
+      &--mini
+        width: 140px
+        height: 170px
+        margin-left: 0
+        &__img
+          top: 38px
+          left: 52.5px
+          right: 57.5px
+        &__text
+          width: 140px
+          left: -1px
+          display: flex
+          flex-wrap: wrap
+          height: 60px
+          align-content: center
+          top: 87px
+          font-style: normal
+          font-weight: bold
+          font-size: 17px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.2px
+  .comit
+    margin-top: 553px
+    height: 100%
+    &__img
+      width: 70px
+      height: 81px
+    &__container
+      max-width: 280px
+    &__text
+      max-width: 280px
+      margin-top: 10px
       font-style: normal
       font-weight: normal
       font-size: 18px

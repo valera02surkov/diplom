@@ -691,6 +691,7 @@ button {
 }
 
 .trend__header--txt {
+  cursor: pointer;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -832,6 +833,7 @@ button {
 }
 
 .trend__flex {
+  display: none;
   width: 100%;
   height: 497px;
   padding-left: 12px;
@@ -840,6 +842,19 @@ button {
 .trend__flex--wrap {
   width: 100%;
   display: flex;
+}
+
+.trend__header--txt__activ {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+}
+
+.trend__flex--activ {
+  display: block;
 }
 
 .comit {
@@ -3724,13 +3739,6 @@ button {
     background-position: center;
     background-position-y: -3px;
     background-image: url(../img/icon/button-right.svg);
-  }
-  .trend__header--txt:hover {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    color: #183B56;
   }
 }
 /*# sourceMappingURL=stile.css.map */

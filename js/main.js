@@ -3,7 +3,7 @@ $(document).ready(function () {
   openModal.addEventListener("click", function () {
     document
       .querySelector(".modal-header")
-      .classList.toggle("modal-header--visible")  
+      .classList.toggle("modal-header--visible")
   });
 
   var closeModalButton = $(".modal__close")
@@ -12,11 +12,11 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
   var modalopen = $(".modal-header")
 
-  function openModal() { 
+  function openModal() {
     modalopen.addClass("modal-header--visible")
   };
   function closeModal() {
-     modalopen.removeClass("modal-header--visible")
+    modalopen.removeClass("modal-header--visible")
   };
   var comitSwiper = new Swiper('.comit__container', {
     // Optional parameters
@@ -41,22 +41,22 @@ $(document).ready(function () {
 
   $(".form").each(function () {
     $(this).validate({
-    messages: {
-      phone: {
-        required: "Ваш Номер",
-        minlength: "номер содержит 11 символов"
+      messages: {
+        phone: {
+          required: "Ваш Номер",
+          minlength: "номер содержит 11 символов"
+        },
+        email: {
+          required: "Заполните поле",
+          email: "Формат почты @mail.ru"
+        },
+        password: {
+          required: "Введите пароль",
+          minlength: "пароль из 5 символов"
+        },
       },
-      email: {
-        required: "Заполните поле",
-        email: "Формат почты @mail.ru"
-      },
-      password: {
-        required: "Введите пароль",
-        minlength: "пароль из 5 символов"
-      },
-    },
+    });
   });
-});
 
 
 
@@ -64,7 +64,7 @@ $(document).ready(function () {
   openModal2.addEventListener("click", function () {
     document
       .querySelector(".modal__log")
-    .classList.toggle("modal__log--activ")
+      .classList.toggle("modal__log--activ")
   });
   var modalButton = $(".header__button")
   var closebutton = $(".modal__log--close")
@@ -77,5 +77,16 @@ $(document).ready(function () {
   }
   function closeModal2() {
     modalLog.removeClass("modal__log--activ")
-  }
+  };
+
+  var tabsitem = $('.trend__header--txt')
+  var contentitem = $('.trend__flex')
+
+  tabsitem.on("click", function (event) {
+    var activContent = $(this).attr("data-target");
+    tabsitem.removeClass("trend__header--txt__activ");
+    contentitem.removeClass("trend__flex--activ");
+    $(activContent).addClass('trend__flex--activ');
+    $(this).addClass('trend__header--txt__activ');
+  })
 });

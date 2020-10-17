@@ -3295,13 +3295,14 @@ button {
     min-width: 290px;
   }
   .history__swiper-container {
+    min-height: 819px;
     top: -44px;
     width: 100%;
     right: 0;
   }
   .history {
     height: 1181px;
-    margin-top: -87px;
+    margin-top: -179px;
   }
   .history__card {
     right: 1px;
@@ -3314,7 +3315,7 @@ button {
     max-height: 150px;
     padding-top: 18px;
     padding-left: 20px;
-    left: 5px;
+    left: 10px;
   }
   .history__card--prise__text {
     font-style: normal;
@@ -3453,6 +3454,9 @@ button {
     min-width: 290px;
     max-width: 290px;
   }
+  .advant__img--photo {
+    width: 100%;
+  }
   .advant__img--mini {
     margin-top: 14px;
     margin-right: 14px;
@@ -3556,12 +3560,13 @@ button {
   }
   .trend__card--mini__img {
     top: 38px;
-    left: 52.5px;
-    right: 57.5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .trend__card--mini__text {
+    left: 50%;
+    transform: translateX(-50%);
     width: 140px;
-    left: -1px;
     display: flex;
     flex-wrap: wrap;
     height: 60px;
@@ -3620,7 +3625,7 @@ button {
     width: 425px;
   }
   .email {
-    margin-top: 56px;
+    margin-top: 148px;
     height: 414px;
     display: flex;
     position: relative;
@@ -3633,15 +3638,16 @@ button {
   .email__imput {
     min-height: 120px;
     width: 280px;
-    margin: -1px 0 auto;
     top: -6px;
     left: 20px;
+    transform: none;
   }
   .email__input {
     border: none;
     border-radius: 8px;
     width: 280px;
     height: 48px;
+    padding-right: 40px;
     margin-bottom: 1px;
   }
   .email__input--img {
@@ -3651,6 +3657,7 @@ button {
     height: 18px;
   }
   .email__input--button {
+    top: 50%;
     border: none;
     border-radius: 8px;
     margin-top: 22px;
@@ -3662,7 +3669,7 @@ button {
   .email__text {
     width: 100%;
     text-align: center;
-    margin: 8px 0 auto;
+    transform: none;
   }
   .email__text--title {
     font-style: normal;

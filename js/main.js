@@ -1,23 +1,36 @@
 $(document).ready(function () {
-  var openModal = document.querySelector(".header__mobail");
-  openModal.addEventListener("click", function () {
-    document
-      .querySelector(".modal-header")
-      .classList.toggle("modal-header--visible")
-  });
 
-  var closeModalButton = $(".modal__close")
-  var modalHeader = $(".modal-header")
-  modalHeader.on("click", openModal);
-  closeModalButton.on("click", closeModal);
-  var modalopen = $(".modal-header")
+  var openmobil = $(".header__mobail")//мобильное окно
+  var closemobil = $(".modal__close")//мобильное окно
+  var mobilmodal = $(".modal-header")//мобильное окно
 
-  function openModal() {
-    modalopen.addClass("modal-header--visible")
-  };
-  function closeModal() {
-    modalopen.removeClass("modal-header--visible")
-  };
+
+  openmobil.on("click", openmobiled)//мобильное окно
+  closemobil.on("click", closemobiled)//мобильное окно
+
+  
+  function openmobiled() {
+    mobilmodal.addClass("modal-header--visible")//мобильное окно
+  }
+  function closemobiled() {
+    mobilmodal.removeClass("modal-header--visible")//мобильное окно
+  }
+
+  var opnelog = $(".modal__log")//модалка для входа
+  var openlog = $(".header__button")//модалка для входа
+  var closelog = $(".modal__log--close")//модалка для входа
+
+  openlog.on("click", openmobiler)//модалка для входа
+  closelog.on("click", closemobiler)//модалка для входа
+
+  function openmobiler() {
+    opnelog.addClass("modal__log--activ")
+  }
+  function closemobiler() {
+    opnelog.removeClass("modal__log--activ")
+  }
+
+
   var comitSwiper = new Swiper('.comit__container', {
     // Optional parameters
     loop: true,
@@ -30,7 +43,7 @@ $(document).ready(function () {
   
   var historySwiper = new Swiper('.history__swiper-container', {
     // Optional parameters
-    loop: true,
+    
 
     // Navigation arrows
     navigation: {
@@ -58,27 +71,6 @@ $(document).ready(function () {
     });
   });
 
-
-
-  var openModal2 = document.querySelector(".header__button");
-  openModal2.addEventListener("click", function () {
-    document
-      .querySelector(".modal__log")
-      .classList.toggle("modal__log--activ")
-  });
-  var modalButton = $(".header__button")
-  var closebutton = $(".modal__log--close")
-  modalButton.on("click", openModal2)
-  closebutton.on("click", closeModal2)
-  var modalLog = $(".modal__log")
-
-  function openModal2() {
-    modalLog.addClass("modal__log--activ")
-  }
-  function closeModal2() {
-    modalLog.removeClass("modal__log--activ")
-  };
-
   var tabsitem = $('.trend__header--txt')
   var contentitem = $('.trend__flex')
 
@@ -88,5 +80,5 @@ $(document).ready(function () {
     contentitem.removeClass("trend__flex--activ");
     $(activContent).addClass('trend__flex--activ');
     $(this).addClass('trend__header--txt__activ');
-  })
+  });
 });

@@ -812,7 +812,7 @@
       align-items: center
       max-width: 610px
       &--wrap
-        width: 300px
+        width: 85%
         padding: 0
     &__card
       width: 48%
@@ -821,7 +821,7 @@
         width: 100%
       &--mini
         min-width: 140px
-        height: 170px
+        height: 352px
         margin-left: -1px
         &__img
   .comit
@@ -1022,6 +1022,7 @@
         width: 140px
         height: 170px
         &__img
+          left: 50%
           top: 40px
         &__text
           align-content: center
@@ -1155,6 +1156,7 @@
       height: 300px
       margin: 0
       &--photo
+        width: 60%
         display: flex
       &--mine
         margin: 18px 0 0 0
@@ -1209,8 +1211,8 @@
         line-height: 22px
         color: #5A7184
     &__card
-      width: 140px
-      height: 234px
+      width: 45%
+      height: 280px
       &--title
         font-style: normal
         font-weight: bold
@@ -1229,15 +1231,19 @@
         &__ico
           width: 14px
           height: 16px
+      &--photo
+        object-position: 0 0
+        transform: none
+        margin: 0
       &--img
-        width: 140px
-        height: 170px
+        width: 100%
+        height: 198px
       &--mini
-        width: 140px
-        height: 170px
+        width: 45%
+        height: 198px
         &__img
           top: 40px
-          left: 57.5px
+          left: 50%
           right: 57.5px
         &__text
           align-content: center
@@ -1249,7 +1255,7 @@
           text-align: center
           letter-spacing: 0.2px
   .comit
-    margin-top: 600px
+    margin-top: 700px
     &__text
       margin-left: 0
       margin-right: 0
@@ -1367,7 +1373,7 @@
       height: 300px
       margin: 0
       &--photo
-        width: 77%
+        width: 99%
         display: flex
       &--mine
         margin: 18px 0 0 0
@@ -1504,7 +1510,8 @@
     max-width: 290px
     min-width: 290px
   .history__swiper-container
-    top: 335px
+    min-height: 870px
+    top: 20px
     width: 100%
     right: 0
   .history
@@ -1542,8 +1549,6 @@
         line-height: 28px
     &-button
       top: 262px
-      width: 48px
-      height: 48px
       object-fit: fill
       left: 0
       &--prev
@@ -1654,9 +1659,10 @@
         line-height: 22px
         color: #5A7184
     &__flex
-      display: flex
-      flex-direction: row
-      justify-content: space-between
+      &--activ
+        display: flex
+        flex-direction: row
+        justify-content: space-between
     &__card
       margin-right: 10px
       margin-left: 0
@@ -1697,11 +1703,11 @@
         margin-left: 0
         &__img
           top: 38px
-          left: 52.5px
+          left: 50%
           right: 57.5px
         &__text
           width: 140px
-          left: -1px
+          left: 50%
           display: flex
           flex-wrap: wrap
           height: 60px
@@ -1753,7 +1759,7 @@
     &__container
       width: 425px
   .email
-    margin-top: 56px
+    margin-top: 253px
     height: 414px
     display: flex
     position: relative
@@ -1764,7 +1770,6 @@
     &__imput
       min-height: 120px
       width: 280px
-      margin: -1px 0 auto
       top: -6px
       left: 20px
     &__input
@@ -1772,6 +1777,7 @@
       border-radius: 8px
       width: 280px
       height: 48px
+      padding-right: 18px
       margin-bottom: 1px
       &--img
         left: 20px
@@ -1779,6 +1785,7 @@
         width: 16px
         height: 18px
       &--button
+        top: 50%
         border: none
         border-radius: 8px
         margin-top: 22px
@@ -1789,7 +1796,6 @@
     &__text
       width: 100%
       text-align: center
-      margin: 8px 0 auto
       &--title
         font-style: normal
         font-weight: bold
@@ -1952,7 +1958,7 @@
     &__card
       &--photo
         &__6
-          object-position: 50% -95%
+          object-position: 50% 2%
     &__flex
       margin-top: -5px
       padding: 0
@@ -1986,9 +1992,10 @@
         line-height: 22px
         color: #5A7184
     &__flex
-      display: flex
-      flex-direction: row
-      justify-content: space-between
+      &--wrap
+        display: flex
+        flex-direction: row
+        justify-content: space-between
     &__card
       margin-right: 10px
       margin-left: 0
@@ -2096,6 +2103,7 @@
       margin: 0
     &__imput
       min-height: 120px
+      margin: 41px 0 0 0
       width: 280px
       top: -6px
       left: 20px
@@ -2123,9 +2131,11 @@
         bottom: 0
     &__text
       width: 100%
+      margin: 0
       text-align: center
       transform: none
       &--title
+        margin-top: 61px
         font-style: normal
         font-weight: bold
         font-size: 28px

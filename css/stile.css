@@ -42,7 +42,7 @@ button {
 
 .modal__log {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 50%;
   right: 0;
   top: 0;
@@ -99,6 +99,7 @@ button {
 
 .modal__log--form {
   position: relative;
+  top: 50%;
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -350,6 +351,9 @@ button {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  background-image: url(../img/photo-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .selection__container {
@@ -521,6 +525,7 @@ button {
 }
 
 .modal__close {
+  cursor: pointer;
   position: absolute;
   right: 16px;
   top: 12px;
@@ -669,7 +674,7 @@ button {
   height: 60px;
   margin-top: -7px;
   margin-bottom: 0;
-  margin-right: 680px;
+  margin-right: 677px;
   font-family: "hkgrotesk";
   font-style: normal;
   font-weight: bold;
@@ -2100,7 +2105,7 @@ button {
     max-width: 610px;
   }
   .trend__flex--wrap {
-    width: 300px;
+    width: 85%;
     padding: 0;
   }
   .trend__card {
@@ -2112,7 +2117,7 @@ button {
   }
   .trend__card--mini {
     min-width: 140px;
-    height: 170px;
+    height: 352px;
     margin-left: -1px;
   }
   .comit {
@@ -2351,6 +2356,7 @@ button {
     height: 170px;
   }
   .trend__card--mini__img {
+    left: 50%;
     top: 40px;
   }
   .trend__card--mini__text {
@@ -2515,6 +2521,7 @@ button {
     margin: 0;
   }
   .advant__img--photo {
+    width: 60%;
     display: flex;
   }
   .advant__img--mine {
@@ -2577,8 +2584,8 @@ button {
     color: #5A7184;
   }
   .trend__card {
-    width: 140px;
-    height: 234px;
+    width: 45%;
+    height: 280px;
   }
   .trend__card--title {
     font-style: normal;
@@ -2602,17 +2609,22 @@ button {
     width: 14px;
     height: 16px;
   }
+  .trend__card--photo {
+    object-position: 0 0;
+    transform: none;
+    margin: 0;
+  }
   .trend__card--img {
-    width: 140px;
-    height: 170px;
+    width: 100%;
+    height: 198px;
   }
   .trend__card--mini {
-    width: 140px;
-    height: 170px;
+    width: 45%;
+    height: 198px;
   }
   .trend__card--mini__img {
     top: 40px;
-    left: 57.5px;
+    left: 50%;
     right: 57.5px;
   }
   .trend__card--mini__text {
@@ -2626,7 +2638,7 @@ button {
     letter-spacing: 0.2px;
   }
   .comit {
-    margin-top: 600px;
+    margin-top: 700px;
   }
   .comit__text {
     margin-left: 0;
@@ -2773,7 +2785,7 @@ button {
     margin: 0;
   }
   .advant__img--photo {
-    width: 77%;
+    width: 99%;
     display: flex;
   }
   .advant__img--mine {
@@ -2939,7 +2951,8 @@ button {
     min-width: 290px;
   }
   .history__swiper-container {
-    top: 335px;
+    min-height: 870px;
+    top: 20px;
     width: 100%;
     right: 0;
   }
@@ -2986,8 +2999,6 @@ button {
   }
   .history-button {
     top: 262px;
-    width: 48px;
-    height: 48px;
     object-fit: fill;
     left: 0;
   }
@@ -3122,7 +3133,7 @@ button {
     line-height: 22px;
     color: #5A7184;
   }
-  .trend__flex {
+  .trend__flex--activ {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3175,12 +3186,12 @@ button {
   }
   .trend__card--mini__img {
     top: 38px;
-    left: 52.5px;
+    left: 50%;
     right: 57.5px;
   }
   .trend__card--mini__text {
     width: 140px;
-    left: -1px;
+    left: 50%;
     display: flex;
     flex-wrap: wrap;
     height: 60px;
@@ -3239,7 +3250,7 @@ button {
     width: 425px;
   }
   .email {
-    margin-top: 56px;
+    margin-top: 253px;
     height: 414px;
     display: flex;
     position: relative;
@@ -3252,7 +3263,6 @@ button {
   .email__imput {
     min-height: 120px;
     width: 280px;
-    margin: -1px 0 auto;
     top: -6px;
     left: 20px;
   }
@@ -3261,6 +3271,7 @@ button {
     border-radius: 8px;
     width: 280px;
     height: 48px;
+    padding-right: 18px;
     margin-bottom: 1px;
   }
   .email__input--img {
@@ -3270,6 +3281,7 @@ button {
     height: 18px;
   }
   .email__input--button {
+    top: 50%;
     border: none;
     border-radius: 8px;
     margin-top: 22px;
@@ -3281,7 +3293,6 @@ button {
   .email__text {
     width: 100%;
     text-align: center;
-    margin: 8px 0 auto;
   }
   .email__text--title {
     font-style: normal;
@@ -3483,7 +3494,7 @@ button {
     margin-top: 115px;
   }
   .trend__card--photo__6 {
-    object-position: 50% -95%;
+    object-position: 50% 2%;
   }
   .trend__flex {
     margin-top: -5px;
@@ -3522,7 +3533,7 @@ button {
     line-height: 22px;
     color: #5A7184;
   }
-  .trend__flex {
+  .trend__flex--wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3652,6 +3663,7 @@ button {
   }
   .email__imput {
     min-height: 120px;
+    margin: 41px 0 0 0;
     width: 280px;
     top: -6px;
     left: 20px;
@@ -3683,10 +3695,12 @@ button {
   }
   .email__text {
     width: 100%;
+    margin: 0;
     text-align: center;
     transform: none;
   }
   .email__text--title {
+    margin-top: 61px;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;

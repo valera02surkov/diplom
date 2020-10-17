@@ -50,16 +50,47 @@
         height: 150px
   .trend
     margin-top: 180px
+    &__flex
+      padding: 0
+      &--wrap
+        justify-content: center
     &__header
       justify-content: space-between
       &--title
         margin-right: 50px
     &__card
-      margin-right: 30px
-    &__flex
-      justify-content: start
+      width: 200px
+      margin-right: 20px
+      &--img
+        width: 200px
+      &--photo
+        transform: none
+        &__1
+          transform: none
+          margin-left: 0
+      &--prise
+        width: 100%
+      &--mini
+        min-width: 200px
+        &__img
+          left: 50%
+          transform: translateX(-50%)
+        &__text
+          left: 50%
+          transform: translateX(-50%)
+          width: 80%
   .comit
-    margin-top: 80px
+    margin-top: 1379px
+  .history
+    &__swiper-container
+      margin-left: 30px
+    &__card
+      width: 280px
+  .email
+    &__container
+      max-width: 1024px
+    &__imput
+      margin-left: -39px
 @media  ( max-width: 986px )
   container: 650px
 @media ( max-width: 768px)
@@ -79,7 +110,7 @@
     &__mobail
       display: flex
       width: 22px
-      right: 60px
+      right: 0
       height: 18px
       align-items: center
       flex-direction: column
@@ -90,10 +121,16 @@
         width: 24px
         background-color: #3A4C66
   .selection
-    margin-top: -5px
+    margin-top: 22px
     &__img
+      top: -0px
       right: -160px
-      height: 100%
+      height: 102%
+      &--photo
+        object-position: 17px -13px
+        transform: none
+      &::after
+        left: 0
     &__title
       font-family: "hkgrotesk"
       max-width: 365px
@@ -103,29 +140,29 @@
       line-height: 60px
       letter-spacing: 0.2px
       color: #183B56
-      margin-top: 24px
-      margin-left: 27px
+      margin-top: 19px
+      margin-left: 28px
     &__text
       max-width: 407px
       font-style: normal
       font-weight: normal
       font-size: 18px
       line-height: 32px
-      margin-top: 20px
+      margin-top: 25px
       margin-left: 27px
     &__button
       &--ready
-        margin-left: 27px
+        margin-top: 36px
+        margin-left: 28px
       &--sel
-        margin-left: 27px
-        margin-top: 35px
+        margin-left: 29px
+        margin-top: 36px
   .prise
-    margin-left: 27px
-    margin-top: 40px
+    margin-top: 36px
+    margin-left: 28px
     &__box
       margin-top: 5px
-      margin-right: 23px
-
+      margin-right: 22px
   .advant
     margin-top: 74px
     justify-content: center
@@ -151,17 +188,18 @@
       &--link
         width: 260px
   .trend
-    margin-top: 75px
+    margin-top: 82px
     &__header
       flex-direction: column
       &--title
         margin-right: 0
       &--text
         width: 285px
-        margin: 39.5px 0 auto
+        margin: 32.5px 0 auto
     &__card
       margin-left: 48px
       margin-right: 0
+      margin-bottom: 48px
       width: 280px
       &--prise
         width: 100%
@@ -172,34 +210,43 @@
         width: 280px
         height: 350px
         margin-left: 48px
-        &__img
-          object-fit: none
-          width: 37px
-          height: 38px
-          top: 118.5px
-          left: 121.5px
-          font-style: normal
-          font-weight: 900
-          font-size: 32px
-          line-height: 37px
+        &__text
+          top: 180px
+          width: 78%
       &--title
-        margin-top: 23px
+        margin-top: 18px
       &--photo
         object-position: 100% 50%
         &__1
           object-position: 50% -85%
+          transform: scale(2, 2)
+          margin-left: 22px
         &__2
-          object-position: 50% -20%
+          object-position: 50% -26%
+          transform: scale(-1.5, 1.5)
+          margin-left: -21px
+        &__3
+          object-position: 50% 76%
+          transform: scale(1.25, 1.25)
+          margin-left: -12px
         &__4
-          object-position: 50% -10%
+          object-position: 50% 9%
+          margin-left: -7px
+          transform: scale(1.1, 1.1)
         &__5
-          object-position: 50% -105%
+          object-position: 50% -92%
+          margin-left: 14px
+          transform: scale(2, 2)
         &__6
-          object-position: 50% -125%
+          object-position: 50% -99%
+          margin-left: -8px
+          transform: scale(1.75, 1.75)
     &__flex
-      margin-top: 54px
+      margin-top: 55px
+      width: 668px
       &--wrap
-        justify-content: start
+        padding-left: 12px
+        justify-content: space-between
         width: 100%
         flex-wrap: wrap
   .comit
@@ -216,24 +263,44 @@
   .history-container
     min-width: 728px
     max-width: 728px
-  .history__swiper-container
-    top: 378px
-    right: 30px
   .history
-    margin-top: -18px
+    margin-top: 42px
+    height: 887px
+    display: flex
+    flex-direction: column
+    &-button
+      margin-top: 17px
+      width: 134px
+      display: flex
+      justify-content: space-between
+      &--prev
+        object-fit: none
+        width: 56px
+        height: 56px
+      &--next
+        object-fit: none
+        width: 56px
+        height: 56px
+    &__swiper-container
+      width: 672px
+      margin-left: 23px
+      margin-top: 123px
+      display: flex
+      justify-content: space-between
     &__cards
     &__card
-      margin-right: 19px
-      margin-left: 6px
+      width: 322px
       &--img
-        width: 312px
+        width: 322px
+        &__img
+          min-width: 100%
+          max-width: 100%
       &--prise
         bottom: 8px
-        left: -2px
+        left: 10px
         &__text
           text-align: left
     &__info
-      padding-top: 58px
       display: flex
       flex-direction: column
       align-items: center
@@ -242,12 +309,11 @@
       width: 100%
       height: 204px
       &--button
-        margin-right: 20px
+        margin-right: 12px
       &--title
         max-width: 500px
-        margin-top: 18px
+        margin-top: 23px
         margin-bottom: 0
-        margin-right: 12px
         font-style: normal
         font-weight: bold
         font-size: 48px
@@ -260,14 +326,8 @@
         margin-right: 13px
         text-align: center
         width: 568px
-    &-button
-      top: 288px
-      &--prev
-        left: 297px
-      &--next
-        left: 375px
   .email
-    margin-top: 333px
+    margin-top: -4px
     height: 402px
     display: flex
     flex-direction: column

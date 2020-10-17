@@ -164,7 +164,7 @@ button {
 }
 
 .email {
-  margin-top: 140px;
+  margin-top: 14px;
   background: #1565D8;
   display: flex;
   height: 100%;
@@ -661,7 +661,7 @@ button {
 .trend__header {
   display: flex;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
 }
 
 .trend__header--title {
@@ -720,7 +720,7 @@ button {
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
-  margin-top: 25px;
+  margin-top: 18px;
   margin-bottom: 3px;
   margin-left: 10px;
   height: 32px;
@@ -744,20 +744,18 @@ button {
 
 .trend__card--photo__3 {
   object-position: 50% 75%;
-  margin-left: 8px;
-  transform: scale(1.5, 1.5);
 }
 
 .trend__card--photo__4 {
   object-position: 50% -28%;
-  margin-left: 5px;
-  transform: scale(1.2, 1.2);
+  margin-left: 8px;
+  transform: scale(1.5, 1.5);
 }
 
 .trend__card--photo__5 {
   object-position: 50% -193%;
-  margin-left: 25px;
-  transform: scale(2.3, 2.3);
+  margin-left: 5px;
+  transform: scale(1.2, 1.2);
 }
 
 .trend__card--photo__6 {
@@ -794,7 +792,8 @@ button {
 }
 
 .trend__card--mini {
-  width: 260px;
+  margin-left: -2px;
+  min-width: 260px;
   height: 350px;
   background-color: #1565D8;
   border-radius: 8px;
@@ -810,6 +809,10 @@ button {
   height: 31px;
   top: 123px;
   left: 114px;
+}
+
+.trend__card--mini__img--svg {
+  object-fit: fill;
 }
 
 .trend__card--mini__text {
@@ -864,7 +867,7 @@ button {
 }
 
 .comit__text {
-  margin-top: 28px;
+  margin-top: 20px;
   margin-left: 15px;
   margin-bottom: 0;
   font-family: "hkgrotesk";
@@ -906,55 +909,55 @@ button {
 }
 
 .history {
-  position: relative;
   display: flex;
+  flex-direction: row;
   height: 606px;
-  margin-top: -10px;
+  margin-top: 126px;
 }
 
 .history__swiper-container {
-  position: absolute;
-  top: 133px;
-  right: -11px;
-  width: 667px;
+  display: flex;
+  justify-content: space-between;
   height: 475px;
+  width: 650px;
+  margin-top: 5px;
+  margin-left: 101px;
 }
 
 .history__cards {
   display: flex;
+  justify-content: space-between;
   overflow: hidden;
-  width: 672px;
+  width: 100%;
 }
 
 .history__card {
   justify-content: center;
-  width: 682px;
+  width: 312px;
   height: 475px;
-  position: relative;
   border-radius: 8px;
   overflow: hidden;
-  margin-right: 20px;
+  position: relative;
 }
 
 .history__card--img {
-  position: absolute;
-  z-index: 9;
-  width: 100%;
+  width: 312px;
   height: 317px;
 }
 
 .history__card--prise {
-  min-height: 178px;
-  z-index: 10;
+  padding-top: 17px;
+  padding-left: 21px;
+  top: 298px;
+  left: 10px;
+  width: 312px;
   position: absolute;
+  min-height: 178px;
   background-color: #fff;
-  bottom: 0;
-  left: 15px;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 
 .history__card--prise__text {
+  width: 259px;
   font-family: "hkgrotesk";
   margin: 0 0 20px 0;
   font-style: normal;
@@ -974,11 +977,8 @@ button {
 }
 
 .history__info {
-  padding-left: 11px;
-  top: 127px;
-  position: absolute;
+  padding-left: 5px;
   width: 392px;
-  height: 319px;
 }
 
 .history__info--button {
@@ -1016,11 +1016,9 @@ button {
 }
 
 .history-button {
-  position: absolute;
-  z-index: 1100;
+  margin-top: 46px;
   width: 56px;
   height: 56px;
-  top: 489px;
   border: none;
   width: 56px;
   height: 56px;
@@ -1030,7 +1028,6 @@ button {
 
 .history-button--next {
   padding: 0;
-  left: 85px;
   border: 2px solid #959EAD;
   box-sizing: border-box;
   border-radius: 2000px;
@@ -1041,8 +1038,8 @@ button {
 }
 
 .history-button--prev {
+  margin-right: 16px;
   width: 54px;
-  left: 9px;
   padding: 0;
   object-fit: fill;
   border: 2px solid #959EAD;
@@ -1051,12 +1048,6 @@ button {
   background-position: center;
   background-position-y: -3px;
   background-image: url(../img/icon/button-left.svg);
-}
-
-.history-container {
-  position: relative;
-  min-width: 1150px;
-  max-width: 1150px;
 }
 
 @media (max-width: 1400px) {
@@ -1125,6 +1116,12 @@ button {
   .trend {
     margin-top: 180px;
   }
+  .trend__flex {
+    padding: 0;
+  }
+  .trend__flex--wrap {
+    justify-content: center;
+  }
   .trend__header {
     justify-content: space-between;
   }
@@ -1132,13 +1129,48 @@ button {
     margin-right: 50px;
   }
   .trend__card {
-    margin-right: 30px;
+    width: 200px;
+    margin-right: 20px;
   }
-  .trend__flex {
-    justify-content: start;
+  .trend__card--img {
+    width: 200px;
+  }
+  .trend__card--photo {
+    transform: none;
+  }
+  .trend__card--photo__1 {
+    transform: none;
+    margin-left: 0;
+  }
+  .trend__card--prise {
+    width: 100%;
+  }
+  .trend__card--mini {
+    min-width: 200px;
+  }
+  .trend__card--mini__img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .trend__card--mini__text {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
   }
   .comit {
-    margin-top: 80px;
+    margin-top: 1379px;
+  }
+  .history__swiper-container {
+    margin-left: 30px;
+  }
+  .history__card {
+    width: 280px;
+  }
+  .email__container {
+    max-width: 1024px;
+  }
+  .email__imput {
+    margin-left: -39px;
   }
 }
 
@@ -1169,7 +1201,7 @@ button {
   .header__mobail {
     display: flex;
     width: 22px;
-    right: 60px;
+    right: 0;
     height: 18px;
     align-items: center;
     flex-direction: column;
@@ -1182,11 +1214,19 @@ button {
     background-color: #3A4C66;
   }
   .selection {
-    margin-top: -5px;
+    margin-top: 22px;
   }
   .selection__img {
+    top: -0px;
     right: -160px;
-    height: 100%;
+    height: 102%;
+  }
+  .selection__img--photo {
+    object-position: 17px -13px;
+    transform: none;
+  }
+  .selection__img::after {
+    left: 0;
   }
   .selection__title {
     font-family: "hkgrotesk";
@@ -1197,8 +1237,8 @@ button {
     line-height: 60px;
     letter-spacing: 0.2px;
     color: #183B56;
-    margin-top: 24px;
-    margin-left: 27px;
+    margin-top: 19px;
+    margin-left: 28px;
   }
   .selection__text {
     max-width: 407px;
@@ -1206,23 +1246,24 @@ button {
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 27px;
   }
   .selection__button--ready {
-    margin-left: 27px;
+    margin-top: 36px;
+    margin-left: 28px;
   }
   .selection__button--sel {
-    margin-left: 27px;
-    margin-top: 35px;
+    margin-left: 29px;
+    margin-top: 36px;
   }
   .prise {
-    margin-left: 27px;
-    margin-top: 40px;
+    margin-top: 36px;
+    margin-left: 28px;
   }
   .prise__box {
     margin-top: 5px;
-    margin-right: 23px;
+    margin-right: 22px;
   }
   .advant {
     margin-top: 74px;
@@ -1257,7 +1298,7 @@ button {
     width: 260px;
   }
   .trend {
-    margin-top: 75px;
+    margin-top: 82px;
   }
   .trend__header {
     flex-direction: column;
@@ -1267,11 +1308,12 @@ button {
   }
   .trend__header--text {
     width: 285px;
-    margin: 39.5px 0 auto;
+    margin: 32.5px 0 auto;
   }
   .trend__card {
     margin-left: 48px;
     margin-right: 0;
+    margin-bottom: 48px;
     width: 280px;
   }
   .trend__card--prise {
@@ -1286,43 +1328,53 @@ button {
     height: 350px;
     margin-left: 48px;
   }
-  .trend__card--mini__img {
-    object-fit: none;
-    width: 37px;
-    height: 38px;
-    top: 118.5px;
-    left: 121.5px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 37px;
+  .trend__card--mini__text {
+    top: 180px;
+    width: 78%;
   }
   .trend__card--title {
-    margin-top: 23px;
+    margin-top: 18px;
   }
   .trend__card--photo {
     object-position: 100% 50%;
   }
   .trend__card--photo__1 {
     object-position: 50% -85%;
+    transform: scale(2, 2);
+    margin-left: 22px;
   }
   .trend__card--photo__2 {
-    object-position: 50% -20%;
+    object-position: 50% -26%;
+    transform: scale(-1.5, 1.5);
+    margin-left: -21px;
+  }
+  .trend__card--photo__3 {
+    object-position: 50% 76%;
+    transform: scale(1.25, 1.25);
+    margin-left: -12px;
   }
   .trend__card--photo__4 {
-    object-position: 50% -10%;
+    object-position: 50% 9%;
+    margin-left: -7px;
+    transform: scale(1.1, 1.1);
   }
   .trend__card--photo__5 {
-    object-position: 50% -105%;
+    object-position: 50% -92%;
+    margin-left: 14px;
+    transform: scale(2, 2);
   }
   .trend__card--photo__6 {
-    object-position: 50% -125%;
+    object-position: 50% -99%;
+    margin-left: -8px;
+    transform: scale(1.75, 1.75);
   }
   .trend__flex {
-    margin-top: 54px;
+    margin-top: 55px;
+    width: 668px;
   }
   .trend__flex--wrap {
-    justify-content: start;
+    padding-left: 12px;
+    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
   }
@@ -1345,29 +1397,53 @@ button {
     min-width: 728px;
     max-width: 728px;
   }
-  .history__swiper-container {
-    top: 378px;
-    right: 30px;
-  }
   .history {
-    margin-top: -18px;
+    margin-top: 42px;
+    height: 887px;
+    display: flex;
+    flex-direction: column;
+  }
+  .history-button {
+    margin-top: 17px;
+    width: 134px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .history-button--prev {
+    object-fit: none;
+    width: 56px;
+    height: 56px;
+  }
+  .history-button--next {
+    object-fit: none;
+    width: 56px;
+    height: 56px;
+  }
+  .history__swiper-container {
+    width: 672px;
+    margin-left: 23px;
+    margin-top: 123px;
+    display: flex;
+    justify-content: space-between;
   }
   .history__card {
-    margin-right: 19px;
-    margin-left: 6px;
+    width: 322px;
   }
   .history__card--img {
-    width: 312px;
+    width: 322px;
+  }
+  .history__card--img__img {
+    min-width: 100%;
+    max-width: 100%;
   }
   .history__card--prise {
     bottom: 8px;
-    left: -2px;
+    left: 10px;
   }
   .history__card--prise__text {
     text-align: left;
   }
   .history__info {
-    padding-top: 58px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1377,13 +1453,12 @@ button {
     height: 204px;
   }
   .history__info--button {
-    margin-right: 20px;
+    margin-right: 12px;
   }
   .history__info--title {
     max-width: 500px;
-    margin-top: 18px;
+    margin-top: 23px;
     margin-bottom: 0;
-    margin-right: 12px;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -1398,17 +1473,8 @@ button {
     text-align: center;
     width: 568px;
   }
-  .history-button {
-    top: 288px;
-  }
-  .history-button--prev {
-    left: 297px;
-  }
-  .history-button--next {
-    left: 375px;
-  }
   .email {
-    margin-top: 333px;
+    margin-top: -4px;
     height: 402px;
     display: flex;
     flex-direction: column;

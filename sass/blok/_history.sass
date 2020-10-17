@@ -1,41 +1,41 @@
 .history
-  position: relative
   display: flex
+  flex-direction: row
   height: 606px
-  margin-top: -10px
+  margin-top: 126px
   &__swiper-container
-    position: absolute
-    top: 133px
-    right: -11px
-    width: 667px
+    display: flex
+    justify-content: space-between
     height: 475px
+    width: 650px
+    margin-top: 5px
+    margin-left: 101px
   &__cards
     display: flex
+    justify-content: space-between
     overflow: hidden
-    width: 672px
+    width: 100%
   &__card
     justify-content: center
-    width: 682px
+    width: 312px
     height: 475px
-    position: relative
     border-radius: 8px
     overflow: hidden
-    margin-right: 20px
+    position: relative
     &--img
-      position: absolute
-      z-index: 9
-      width: 100%
+      width: 312px
       height: 317px
     &--prise
-      min-height: 178px
-      z-index: 10
+      padding-top: 17px
+      padding-left: 21px
+      top: 298px
+      left: 10px
+      width: 312px
       position: absolute
+      min-height: 178px
       background-color: #fff
-      bottom: 0
-      left: 15px
-      padding-top: 20px
-      padding-left: 20px
       &__text
+        width: 259px
         font-family: "hkgrotesk"
         margin: 0 0 20px 0
         font-style: normal
@@ -51,11 +51,8 @@
         line-height: 22px
         color: #1565D8
   &__info
-    padding-left: 11px
-    top: 127px
-    position: absolute
+    padding-left: 5px
     width: 392px
-    height: 319px
     &--button
       margin-left: 7px
       border: none
@@ -85,11 +82,9 @@
       letter-spacing: 0.2px
       color: #183B56
   &-button
-    position: absolute
-    z-index: 1100
+    margin-top: 46px
     width: 56px
     height: 56px
-    top: 489px
     border: none
     width: 56px
     height: 56px
@@ -97,7 +92,6 @@
     border-radius: 2000px
     &--next
       padding: 0
-      left: 85px
       border: 2px solid #959EAD
       box-sizing: border-box
       border-radius: 2000px
@@ -106,8 +100,8 @@
       background-position: center
       background-position-y: -3px
     &--prev
+      margin-right: 16px
       width: 54px
-      left: 9px
       padding: 0
       object-fit: fill
       border: 2px solid #959EAD
@@ -116,7 +110,3 @@
       background-position: center
       background-position-y: -3px
       background-image: url(../img/icon/button-left.svg)
-.history-container
-  position: relative
-  min-width: 1150px
-  max-width: 1150px

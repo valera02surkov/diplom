@@ -188,11 +188,20 @@
     &__card
       width: 280px
   .email
+    margin-top: -4px
+    height: 402px
+    display: flex
+    flex-direction: column
+    position: relative
     &__container
       max-width: 1024px
+    &__text
+      width: 436px
+      text-align: center
+      margin: 14px auto
     &__imput
-      width: 37%
-      margin-left: 10px
+      width: 447px
+      margin: 57px auto
 @media  ( max-width: 986px )
   .container
     max-width: 976px
@@ -318,7 +327,6 @@
       &::after
         left: 0
     &__title
-
       max-width: 365px
       font-style: normal
       font-weight: bold
@@ -525,13 +533,11 @@
       margin: 0
     &__imput
       width: 447px
-      margin-top: 57px
-      margin-left: 161px
+      margin: 57px auto
     &__text
       width: 436px
       text-align: center
-      margin-top: 14px
-      margin-left: 166px
+      margin: 14px auto
     &__svg
       object-fit: fill
       height: 131%

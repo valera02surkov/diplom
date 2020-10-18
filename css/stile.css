@@ -186,6 +186,7 @@ button {
   position: relative;
   margin-top: 140px;
   margin-left: 193px;
+  margin-right: auto;
   width: 447px;
   height: 56px;
   border-radius: 8px;
@@ -1450,12 +1451,24 @@ button {
   .history__card {
     width: 280px;
   }
+  .email {
+    margin-top: -4px;
+    height: 402px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
   .email__container {
     max-width: 1024px;
   }
+  .email__text {
+    width: 436px;
+    text-align: center;
+    margin: 14px auto;
+  }
   .email__imput {
-    width: 37%;
-    margin-left: 10px;
+    width: 447px;
+    margin: 57px auto;
   }
 }
 
@@ -1869,14 +1882,12 @@ button {
   }
   .email__imput {
     width: 447px;
-    margin-top: 57px;
-    margin-left: 161px;
+    margin: 57px auto;
   }
   .email__text {
     width: 436px;
     text-align: center;
-    margin-top: 14px;
-    margin-left: 166px;
+    margin: 14px auto;
   }
   .email__svg {
     object-fit: fill;

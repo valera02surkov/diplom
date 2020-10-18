@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/stile.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -14,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <section class="container">
+      <div class="container">
         <nav class="header__nav">
           <a href="index.html" class="header__logo">
             <img src="img/Logo.svg" class="header__logo" alt="Logo" />
@@ -45,7 +47,7 @@
             <span class="header__mobail--button"></span>
           </button>
         </nav>
-      </section>
+      </div>
     </header>
     <!--/.header-->
     <div class="modal__log">
@@ -55,7 +57,7 @@
             <img src="img/close.svg" alt="" class="modal__log--close__svg" />
           </button>
           <input
-            type="phone"
+            type="tel"
             name="phone"
             class="form modal__log--form__phone"
             required
@@ -342,6 +344,7 @@
                 <img
                   src="img/icon/icon-plus.svg"
                   class="trend__card--mini__img--svg"
+                  alt=""
                 />
               </div>
               <span class="trend__card--mini__text">
@@ -518,6 +521,7 @@
               <div class="trend__card--mini__img">
                 <img
                   src="img/icon/icon-plus.svg"
+                  alt=""
                   class="trend__card--mini__img--svg"
                 />
               </div>
@@ -695,6 +699,7 @@
             <a href="#" class="trend__card--mini">
               <div class="trend__card--mini__img">
                 <img
+                  alt=""
                   src="img/icon/icon-plus.svg"
                   class="trend__card--mini__img--svg"
                 />
@@ -911,7 +916,7 @@
             required
             minlength="2"
           />
-          <img src="img/icon/mail.svg" class="email__input--img" />
+          <img src="img/icon/mail.svg" alt="" class="email__input--img" />
           <button class="email__input--button">
             <span class="email__input--button__text">Подписаться</span>
           </button>

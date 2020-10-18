@@ -94,6 +94,19 @@
     &__imput
       margin-right: 10px
       margin-left: 73px
+  .footer
+    &__naw
+      margin-top: 6px
+      margin-left: 20px
+    &__servis
+      margin-top: 6px
+      margin-left: 20px
+    &__company
+      margin-top: 6px
+      margin-left: 20px
+    &__contacts
+      margin-top: 6px
+      margin-left: 20px
 @media ( max-width: 1024px)
   .container
     max-width: 986px
@@ -220,6 +233,15 @@
   .email
     &__container
       max-width: 100%
+  .footer
+    &__logo
+      margin-left: 40px
+      margin-bottom: 32px
+    &__new
+      margin: auto
+      width: 358px
+      display: flex
+      flex-wrap: wrap
 @media  ( max-width: 940px )
   .container
     max-width: 930px
@@ -797,6 +819,25 @@
       &--1
         width: 41%
         bottom: -294px
+  .footer
+    margin-top: 58px
+    &__logo
+      margin-left: 31px
+    &__new
+      margin-left: 8px
+      width: 370px
+    &__naw
+      margin-top: 5px
+      margin-left: 20px
+    &__servis
+      margin-top: 6px
+      margin-left: 47px
+    &__company
+      margin-top: 32px
+      margin-left: 20px
+    &__contacts
+      margin-top: 30px
+      margin-left: 45px
 @media   ( max-width: 700px )
   .container
     max-width: 690px
@@ -863,6 +904,17 @@
       flex-direction: column
     &__card
       margin-right: 22px
+  .footer
+    justify-content: center
+    flex-wrap: wrap
+    &__logo
+      width: 100%
+      margin-left: 50%
+      transform: translateX(-50%)
+      margin-bottom: 40px
+    &__new
+      margin: auto
+      flex-wrap: no-wrap
 @media   ( max-width: 625px )
   .trend
     &__flex
@@ -1311,6 +1363,26 @@
       display: none
       &--1
         display: none
+  .footer
+    &__new
+      width: 360px
+    &__logo
+      display: none
+    &__naw
+      margin: auto
+    &__servis
+      margin: auto
+    &__contacts
+      margin: auto
+@media  ( max-width: 440px )
+  .footer
+    &__new
+      width: 100%
+      flex-direction: column
+    &__company
+      margin: auto
+    &__contacts
+      width: 147px
 @media ( max-width: 425px)
   .displey-none
     display: none
@@ -1544,6 +1616,7 @@
       max-height: 407px
       &--prise
         top: 257px
+        width: 100%
         max-height: 150px
         padding-top: 18px
         padding-left: 20px
@@ -1554,6 +1627,7 @@
           font-size: 20px
           line-height: 24px
       &--img
+        width: 100%
         height: 277px
     &__info
       padding-top: 45px
@@ -1705,7 +1779,6 @@
         letter-spacing: 0.2px
       &--prise
         margin-top: -2px
-        margin-left: 56px
         width: 115%
         justify-content: start
         &__li
@@ -2201,7 +2274,42 @@
   .modal
     &__log
       left: 0
+  .footer
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__li
+      margin-top: 14px
+    &__naw
+      margin-top: 2px
+      margin-left: 19px
+      margin-bottom: 16px
+    &__servis
+      margin-left: 18px
+    &__contacts
+      margin-top: 14px
+      margin-left: 18px
+    &__company
+      margin-top: 17px
+      margin-left: 18px
 @media (min-width: 1200px)
+  .footer
+    &__li:hover
+      border-bottom: 1px solid
+    &__logo
+      &--lnk
+        &__text:hover
+          border-bottom: 1px solid
+      &--link
+        &__svg:hover
+          transform: rotateZ(45deg)
   button:hover
     opacity: 75%
   .header

@@ -72,8 +72,8 @@ button {
   transform: translateX(-50%);
   display: flex;
   background-color: rgda(1, 1, 1, 1);
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   left: 50%;
   z-index: 1000;
 }
@@ -113,13 +113,13 @@ button {
   position: relative;
   border-radius: 8px;
   margin: 35px auto 0;
-  width: 94%;
+  width: 240px;
   height: 46px;
 }
 
 .modal__log--form__password {
   position: relative;
-  width: 94%;
+  width: 240px;
   height: 46px;
   margin: 30px auto 0;
   border-radius: 8px;
@@ -129,9 +129,9 @@ button {
 .modal__log--form__button {
   border-radius: 8px;
   border-color: blue;
-  width: 95%;
-  height: 36px;
-  margin: 10px auto 0;
+  width: 240px;
+  height: 46px;
+  margin: 24px auto 0;
 }
 
 .modal__log--form__button--text {
@@ -1087,6 +1087,7 @@ button {
   .selection {
     max-width: 1100px;
     overflow: hidden;
+    background-position: -115px 0;
   }
   .trend__flex--wrap {
     flex-wrap: wrap;
@@ -1176,7 +1177,7 @@ button {
     width: 80%;
   }
   .comit {
-    margin-top: 487px;
+    margin-top: 506px;
   }
   .history {
     margin-top: 30px;
@@ -1191,7 +1192,8 @@ button {
     max-width: 1024px;
   }
   .email__imput {
-    margin-left: -39px;
+    margin-right: 10px;
+    margin-left: 73px;
   }
 }
 
@@ -1302,7 +1304,8 @@ button {
     max-width: 1024px;
   }
   .email__imput {
-    margin-left: -39px;
+    width: 37%;
+    margin-left: 10px;
   }
 }
 
@@ -1322,6 +1325,9 @@ button {
   .trend__flex--wrap {
     margin: auto;
     width: 100%;
+  }
+  .selection {
+    background-position: -175px 0;
   }
   .history {
     display: flex;
@@ -1703,6 +1709,7 @@ button {
     margin: 0;
   }
   .email__imput {
+    width: 447px;
     margin-top: 57px;
     margin-left: 161px;
   }
@@ -1726,6 +1733,9 @@ button {
 }
 
 @media (max-width: 768px) {
+  hr {
+    margin-top: -14px;
+  }
   .container {
     max-width: 728px;
   }
@@ -1762,6 +1772,8 @@ button {
   }
   .selection {
     margin-top: 22px;
+    background-size: 175% 108%;
+    background-position: -354px -14px;
   }
   .selection__img {
     top: -0px;
@@ -1820,6 +1832,7 @@ button {
     max-width: 322px;
     height: 490px;
     margin-right: 30px;
+    margin-left: 0px;
     flex-wrap: nowrap;
   }
   .advant__img--mine {
@@ -1938,6 +1951,7 @@ button {
     margin-left: 0;
   }
   .comit__container {
+    min-height: 430px;
     width: 630px;
   }
   .comit__text {
@@ -1952,7 +1966,7 @@ button {
     max-width: 728px;
   }
   .history {
-    margin-top: 42px;
+    margin-top: 85px;
     height: 887px;
     display: flex;
     flex-direction: column;
@@ -1994,11 +2008,13 @@ button {
     max-width: 100%;
   }
   .history__card--prise {
+    top: 297px;
     width: 322px;
     bottom: 8px;
     left: 10px;
   }
   .history__card--prise__text {
+    margin: 0 0 23px 0;
     text-align: left;
   }
   .history__info {
@@ -2032,7 +2048,7 @@ button {
     width: 568px;
   }
   .email {
-    margin-top: -4px;
+    margin-top: -6px;
     height: 402px;
     display: flex;
     flex-direction: column;
@@ -2044,6 +2060,7 @@ button {
     margin: 0;
   }
   .email__imput {
+    width: 447px;
     margin-top: 57px;
     margin-left: 161px;
   }
@@ -2150,6 +2167,10 @@ button {
 }
 
 @media (max-width: 625px) {
+  .trend__flex {
+    width: 60%;
+    margin: auto;
+  }
   .container {
     max-width: 610px;
   }
@@ -2191,6 +2212,7 @@ button {
   }
   .selection {
     min-height: 860px;
+    background-position: 90% 0;
   }
   .selection__container {
     width: 100%;
@@ -2239,7 +2261,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 36px;
+    margin: 20px auto;
   }
   .prise__box {
     margin: auto;
@@ -2370,7 +2392,7 @@ button {
     letter-spacing: 0.2px;
   }
   .comit {
-    margin-top: 540px;
+    margin-top: 590px;
   }
   .comit__text {
     margin-left: 0;
@@ -2466,6 +2488,9 @@ button {
   }
   .history-button {
     left: 0;
+  }
+  .selection {
+    background-position: 82% 0;
   }
   .selection__img {
     flex-basis: 100%;
@@ -3021,6 +3046,8 @@ button {
     right: 0;
   }
   .selection {
+    background-size: 384% 72%;
+    background-position: 80% 0px;
     min-height: 899px;
   }
   .selection__img {
@@ -3097,6 +3124,7 @@ button {
     object-position: 50% -95%;
   }
   .trend__flex {
+    display: none;
     margin-top: -5px;
     padding: 0;
   }
@@ -3157,7 +3185,9 @@ button {
     letter-spacing: 0.2px;
   }
   .trend__card--prise {
-    width: 100%;
+    margin-top: -2px;
+    margin-left: 56px;
+    width: 115%;
     justify-content: start;
   }
   .trend__card--prise__li {
@@ -3328,7 +3358,7 @@ button {
   }
   .history {
     height: 1181px;
-    margin-top: -179px;
+    margin-top: -93px;
   }
   .history__card {
     right: 1px;
@@ -3338,18 +3368,22 @@ button {
   }
   .history__card--prise {
     top: 257px;
+    max-width: 260px;
     max-height: 150px;
     padding-top: 18px;
     padding-left: 20px;
     left: 10px;
   }
   .history__card--prise__text {
+    margin: 0 0 19px 0;
+    width: 100%;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
   }
   .history__card--img {
+    width: 270px;
     height: 277px;
   }
   .history__info {
@@ -3404,6 +3438,8 @@ button {
     margin-top: -13px;
     width: 320px;
     left: -19px;
+    background-size: 396%;
+    background-position: 79.5% -5px;
   }
   .selection__container {
     position: relative;
@@ -3424,9 +3460,10 @@ button {
     transform: scale(3.4, 1);
   }
   .selection__title {
+    width: 100%;
     margin-top: 13px;
     font-family: "hkgrotesk";
-    margin-left: -7px;
+    margin-left: 0;
   }
   .selection__text {
     margin-top: 24px;
@@ -3434,13 +3471,14 @@ button {
     width: 280px;
   }
   .selection__button--ready {
-    margin-top: 376px;
-    margin-left: 21%;
+    margin-top: 377px;
+    margin-left: 66px;
   }
   .selection__button--sel {
     width: 257px;
     height: 48px;
-    margin-left: 11%;
+    margin-top: 23px;
+    margin-left: 36px;
   }
   .selection__button--sel__text {
     font-style: normal;
@@ -3467,7 +3505,7 @@ button {
     letter-spacing: 0.2px;
   }
   .advant {
-    margin-top: 28px;
+    margin-top: 29px;
   }
   .advant__info--title {
     height: 72px;
@@ -3491,7 +3529,10 @@ button {
     margin-top: 14px;
   }
   .trend {
-    margin-top: 115px;
+    margin-top: 114px;
+  }
+  .trend__card--prise {
+    margin-left: 0;
   }
   .trend__card--photo__6 {
     object-position: 50% 2%;
@@ -3523,18 +3564,29 @@ button {
     color: #183B56;
   }
   .trend__header--text {
-    width: 218px;
-    margin: 26.5px 0 auto;
-    justify-content: space-between;
-    min-width: 218px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    width: 231px;
+    margin: 26.5px 0 auto;
+    justify-content: space-between;
+    min-width: 218px;
     color: #5A7184;
+  }
+  .trend__header--text--activ {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .trend__flex {
+    margin-top: 0px;
+    flex-direction: column;
   }
   .trend__flex--wrap {
     display: flex;
+    min-width: 300px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -3566,6 +3618,7 @@ button {
     font-size: 14px;
     line-height: 24px;
     margin-right: 9px;
+    margin-left: 0;
   }
   .trend__card--prise__ico {
     object-fit: cover;
@@ -3582,7 +3635,9 @@ button {
   .trend__card--mini {
     width: 140px;
     height: 170px;
+    margin-top: 0;
     margin-left: 0;
+    margin-right: 10px;
   }
   .trend__card--mini__img {
     top: 38px;
@@ -3606,7 +3661,7 @@ button {
     letter-spacing: 0.2px;
   }
   .comit {
-    margin-top: 553px;
+    margin-top: 548px;
     height: 100%;
   }
   .comit__img {
@@ -3718,6 +3773,9 @@ button {
   }
   .email__svg--1 {
     display: none;
+  }
+  .modal__log {
+    left: 0;
   }
 }
 

@@ -9,11 +9,10 @@ body {
 }
 
 @font-face {
-  font-family: "hkgrotesk";
-  src: url("../fonts/hkgrotesk-regular.woff") format("woff"), url("../fonts/hkgrotesk-regular.woff2") format("woff2");
+  font-family: "HKGrotesk";
+  src: url("../fonts/HKGrotesk-regular.woff") format("woff"), url("../fonts/HKGrotesk-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -239,7 +238,7 @@ button {
 
 .email__text--title {
   margin: 52px 0 0;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -428,7 +427,8 @@ button {
 }
 
 .selection__title {
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -498,7 +498,8 @@ button {
 }
 
 .prise__text {
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -623,7 +624,8 @@ button {
   height: 120px;
   margin-top: 3px;
   margin-bottom: 0;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -675,7 +677,7 @@ button {
   margin-top: -7px;
   margin-bottom: 0;
   margin-right: 677px;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -719,7 +721,7 @@ button {
 }
 
 .trend__card--title {
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -827,7 +829,8 @@ button {
   right: 22px;
   width: 216px;
   position: absolute;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -890,7 +893,8 @@ button {
   margin-top: 20px;
   margin-left: 15px;
   margin-bottom: 0;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -904,7 +908,8 @@ button {
   margin-top: 28px;
   margin-left: 11px;
   margin-bottom: 53px;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -978,7 +983,7 @@ button {
 
 .history__card--prise__text {
   width: 259px;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
   margin: 0 0 20px 0;
   font-style: normal;
   font-weight: 500;
@@ -1026,7 +1031,8 @@ button {
 .history__info--title {
   margin-top: 28px;
   margin-bottom: 24px;
-  font-family: "hkgrotesk";
+  font-family: "HKGrotesk";
+  font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;

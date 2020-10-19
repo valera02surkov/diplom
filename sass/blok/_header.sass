@@ -1,39 +1,28 @@
 .header
-  position: fixed
   top: 0
-  left: 50%
-  transform: translate(-50%)
-  z-index: 999
-  height: 100px
+  position: fixed
+  width: 100%
+  z-index: 800
   background-color: #fff
-  border-radius: 8px
-  width: 1440px
-  &>container
-    position: fixed
-  &__mobail
-    display: none
-    cursor: pointer
-    position: absolute
+  &__container
+    max-width: 1157px
+    height: 100px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    margin-left: 9px
+    width: 90px
+    height: 28px
   &__nav
-    max-width: 100%
-    top: 50%
-    transform: translateY(50%)
     display: flex
     align-items: center
-    &--link
-      display: flex
-      margin-right: 50px
-      flex-wrap: nowrap
-  &__logo
-    max-width: 90px
-    max-height: 28px
-    margin-right: 393px
-  &__link
-    justify-content: center
+    flex-direction: row
   &__text
     font-family: 'Open Sans'
     margin-left: 3px
-    margin-right: 38px
+    margin-right: 35px
     font-style: normal
     font-weight: 600
     font-size: 16px
@@ -46,9 +35,11 @@
       font-size: 16px
       line-height: 22px
       color: #183B56
+  &__mobail
+    display: none
   &__button
     font-family: 'Open Sans'
-    margin-left: -42px
+    margin-left: 12px
     width: 101px
     height: 48px
     padding: 11px 22px

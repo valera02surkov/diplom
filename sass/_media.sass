@@ -8,22 +8,6 @@
 @media  (max-width: 1200px )
   .container
     max-width: 1100px
-  .header
-    &__logo
-      left: 10%
-      margin-left: 40px
-      margin-right: 380px
-  .selection
-    max-width: 1100px
-    overflow: hidden
-    background-position: -115px 0
-  .trend
-    &__flex
-      &--wrap
-        flex-wrap: wrap
-  .header
-    &__logo
-      margin-right: 180px
   .selection
     &__img
       &::after
@@ -126,9 +110,6 @@
     &__flex
       &--wrap
         flex-wrap: wrap
-  .header
-    &__logo
-      margin-right: 180px
   .selection
     &__img
       &::after
@@ -303,31 +284,6 @@
   .email
     &__container
       max-width: 100%
-  .header
-    max-width: 825px
-    height: 48px
-    margin: auto
-    &__logo
-      margin: 0
-    &__nav
-      position: relative
-      &--link
-        display: none
-    &__button
-      display: none
-    &__mobail
-      display: flex
-      width: 22px
-      right: 0
-      height: 18px
-      align-items: center
-      flex-direction: column
-      justify-content: space-between
-      border: none
-      &--button
-        height: 2px
-        width: 24px
-        background-color: #3A4C66
   .selection
     margin-top: 22px
     &__img
@@ -560,32 +516,27 @@
       &--1
         width: 41%
         bottom: -294px
-@media  ( max-width: 900px )
-  .header
-    &__nav
-      margin-left: 5%
-      margin-right: 5%
 @media ( max-width: 768px)
-  hr
-    margin-top: -14px
-  .container
-    max-width: 728px
   .header
-    max-width: 650px
-    margin: auto
+    height: 64px
+    &__container
+      height: 64px
+      max-width: 700px
     &__logo
-      margin: 0
+      margin-top: 8px
+      margin-left: 17px
     &__nav
-      position: relative
       &--link
         display: none
     &__button
       display: none
     &__mobail
+      z-index: 100
+      margin-top: 21px
+      margin-right: 24px
       display: flex
-      width: 22px
-      right: 0
-      height: 18px
+      width: 24px
+      height: 24px
       align-items: center
       flex-direction: column
       justify-content: space-between
@@ -594,8 +545,12 @@
         height: 2px
         width: 24px
         background-color: #3A4C66
+  hr
+    margin-top: -14px
+  .container
+    max-width: 728px
   .selection
-    margin-top: 22px
+    margin-top: 102px
     background-size: 175% 108%
     background-position: -354px -14px
     &__img
@@ -860,8 +815,6 @@
       margin-top: 10px
       margin-left: 45px
 @media   ( max-width: 700px )
-  .header
-    min-width: 272px
   .container
     max-width: 690px
     margin: auto
@@ -1180,10 +1133,6 @@
       &--link
         margin-left: 0
 @media  ( max-width: 615px )
-  .header
-    min-width: 272px
-    &>.container
-      max-width: 400px
   .container
     max-width: 600px
   .displey-none
@@ -1685,12 +1634,6 @@
         left: 152px
   .container
     max-width: 290px
-  .header
-    width: 272px
-    padding-top: 20px
-    padding-bottom: 53px
-    &__mobail
-      right: 0
   .selection
     background-size: 384% 72%
     background-position: 80% 0px
@@ -2008,15 +1951,9 @@
         left: 152px
   .container
     max-width: 290px
-  .header
-    width: 272px
-    padding-top: 20px
-    padding-bottom: 53px
-    &__mobail
-      right: 0
   .selection
     min-height: 934px
-    margin-top: -13px
+    margin-top: 88px
     width: 320px
     left: -19px
     background-size: 396%
@@ -2373,3 +2310,32 @@
         &__link:hover
           border-bottom: 2px solid
           border-color: #1565D8
+@media  ( max-width: 1300px )
+  .header
+    &__logo
+      margin-right: 348px
+@media  ( max-width: 1250px )
+  .header
+    &__logo
+      margin-right: 300px
+@media  ( max-width: 1170px )
+  .header
+    &__logo
+      margin-right: 240px
+@media  ( max-width: 1100px)
+  .header
+    &__logo
+      margin-right: 143px
+@media  ( max-width: 1000px )
+  .header
+    &__text
+      margin-left: 0
+      margin-right: 28px
+@media  ( max-width: 940px )
+  .header
+    &__logo
+      margin-right: 100px
+@media  (max-width: 800px)
+  .header
+    &__text
+      margin-right: 15px

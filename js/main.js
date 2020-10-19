@@ -70,6 +70,31 @@ $(document).ready(function () {
       },
     });
   });
+  
+  var buttonPrev = $(".history-button--prev")
+  var buttonNext = $(".history-button--next")
+  buttonNext.on("click", activesCikl)
+  buttonPrev.on("click", activesCikl)
+  function activesCikl() {
+    buttonNext.addClass("history-button--next__activ")
+    buttonPrev.addClass("history-button--prev__activ")
+    buttonPrev.on("click", actives)
+    function actives() {
+      buttonNext.addClass("history-button--next__activ")
+      buttonPrev.on("click", desactiv)
+      function desactiv() {
+        buttonPrev.removeClass("history-button--prev__activ")
+        buttonNext.addClass("history-button--next__activ")
+        buttonNext.on("click", activesCikl)
+        buttonPrev.on("click", activesCikl)
+      }
+    }
+    buttonNext.on("click", desactiv)
+    function desactiv() {
+      buttonNext.removeClass("history-button--next__activ")
+    }
+  }
+
 
   var tabsitem = $('.trend__header--txt')
   var contentitem = $('.trend__flex')

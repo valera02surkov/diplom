@@ -55,9 +55,9 @@ $(document).ready(function () {
   $(".form").each(function () {
     $(this).validate({
       messages: {
-        phone: {
-          required: "Ваш Номер",
-          minlength: "номер содержит 11 символов"
+        name: {
+          required: "Ваш логин",
+          minlength: "Не менее 4 символов"
         },
         email: {
           required: "Заполните поле",

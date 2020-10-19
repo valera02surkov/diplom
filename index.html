@@ -58,15 +58,17 @@
           </button>
           <input
             type="tel"
-            name="phone"
+            name="name"
             class="form modal__log--form__phone"
+            minlength="4"
             required
-            placeholder="Ваш номер телефона"
+            placeholder="Ваш Логин"
           />
           <input
             type="password"
             class="form modal__log--form__password"
             name="password"
+            minlength="5"
             required
             placeholder="Ваш пароль"
           />
@@ -776,7 +778,9 @@
           </p>
           <div class="history-button">
             <button class="history-button history-button--prev"></button>
-            <button class="history-button history-button--next history-button--next__activ"></button>
+            <button
+              class="history-button history-button--next history-button--next__activ"
+            ></button>
           </div>
         </div>
         <!-- Slider main container -->
@@ -906,7 +910,11 @@
             новости из мира моды.
           </p>
         </div>
-        <form class="form email__imput--form email__imput">
+        <form
+          action="send.php"
+          method="POST"
+          class="form email__imput--form email__imput"
+        >
           <input
             type="email"
             name="email"

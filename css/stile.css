@@ -1614,7 +1614,7 @@ button {
     max-width: 100%;
   }
   .selection {
-    margin-top: 22px;
+    margin-top: 110px;
   }
   .selection__img {
     top: -0px;
@@ -1821,7 +1821,7 @@ button {
   .history__swiper-container {
     width: 672px;
     display: flex;
-    margin: 4px auto;
+    margin: 53px auto;
     justify-content: space-between;
   }
   .history__card {
@@ -1847,7 +1847,6 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 118px;
     width: 100%;
     height: 204px;
   }
@@ -2360,6 +2359,9 @@ button {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
+  }
+  .history-button--prev {
+    background-position-y: -2px;
   }
   .history__card {
     margin-right: 22px;
@@ -3950,11 +3952,11 @@ button {
     margin: 41px 0 0 0;
     width: 280px;
     top: -6px;
-    left: 5px;
     transform: none;
   }
   .email__input {
     border: none;
+    padding-left: 38px;
     border-radius: 8px;
     width: 280px;
     height: 48px;

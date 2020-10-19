@@ -106,4 +106,12 @@ $(document).ready(function () {
     $(activContent).addClass('trend__flex--activ');
     $(this).addClass('trend__header--txt__activ');
   });
+
+
+  var link = $(".modal__menu")
+  link.on("click", rem)
+  var closer = $(".modal-header")
+  function rem() { 
+    closer.removeClass("modal-header--visible")
+  };
 });

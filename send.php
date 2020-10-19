@@ -50,4 +50,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Lokation: thenckyoo.html')
+header('Location: thenckyoo.html');

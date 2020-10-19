@@ -11,6 +11,7 @@
     &>.container
       max-width: 1121px
   &__imput
+    z-index: 99
     position: relative
     margin-top: 140px
     margin-left: 193px
@@ -19,6 +20,12 @@
     height: 56px
     border-radius: 8px
     overflow: hidden
+    &>.error
+      top: 0
+      padding-left: 40px
+      position: absolute
+      z-index: 10
+      color: red
   &__input
     font-family: 'Open Sans'
     z-index: 99
@@ -87,8 +94,4 @@
       right: 0
       width: 36%
 .error
-  top: 0
-  padding-left: 15px
-  position: absolute
-  z-index: 10
   color: red

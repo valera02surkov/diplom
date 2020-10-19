@@ -18,13 +18,16 @@ $(document).ready(function () {
 
   var opnelog = $(".modal__log")//модалка для входа
   var openlog = $(".header__button")//модалка для входа
+  var mobillog =$(".modal__button")
   var closelog = $(".modal__log--close")//модалка для входа
 
+  mobillog.on("click" ,openmobiler )
   openlog.on("click", openmobiler)//модалка для входа
   closelog.on("click", closemobiler)//модалка для входа
 
   function openmobiler() {
     opnelog.addClass("modal__log--activ")
+    mobilmodal.removeClass("modal-header--visible")
   }
   function closemobiler() {
     opnelog.removeClass("modal__log--activ")

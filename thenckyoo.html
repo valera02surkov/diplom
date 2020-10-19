@@ -16,25 +16,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container">
+        <a href="index.html" class="header__logo">
+          <img src="img/Logo.svg" class="header__logo" alt="Logo" />
+        </a>
         <nav class="header__nav">
-          <a href="index.html" class="header__logo">
-            <img src="img/Logo.svg" class="header__logo" alt="Logo" />
-          </a>
           <div class="header__nav--link">
-            <a href="#">
+            <a href="#selection">
               <span class="header__text">Главная</span>
             </a>
-            <a href="#">
+            <a href="#advant">
               <span class="header__text">Новинки</span>
             </a>
-            <a href="#">
+            <a href="#trend">
               <span class="header__text">Тренды</span>
             </a>
-            <a href="#">
+            <a href="#comit">
               <span class="header__text">Отзывы</span>
             </a>
-            <a href="#">
+            <a href="#footer">
               <span class="header__text--contact header__text">Контакты</span>
             </a>
           </div>
@@ -50,12 +50,17 @@
       </div>
     </header>
     <!--/.header-->
+    <div class="senky container">
+      <h1 class="senky__title">Спасибо за подписку</h1>
+    </div>
     <div class="modal__log">
       <div class="modal__log--box">
         <form class="form modal__log--form">
-          <button class="modal__log--close">
-            <img src="img/close.svg" alt="" class="modal__log--close__svg" />
-          </button>
+          <img
+            src="img/close.svg"
+            alt=""
+            class="modal__log--close modal__log--close__svg"
+          />
           <input
             type="tel"
             name="name"
@@ -86,18 +91,15 @@
         <a class="modal__close">
           <img src="img/close.svg" alt="" />
         </a>
-        <a href="#" class="modal__menu">Главная</a>
-        <a href="#" class="modal__menu">Новинки</a>
-        <a href="#" class="modal__menu">Тренды</a>
-        <a href="#" class="modal__menu">Отзывы</a>
-        <a href="#" class="modal__menu">Контакты</a>
+        <a href="#selection" class="modal__menu">Главная</a>
+        <a href="#advant" class="modal__menu">Новинки</a>
+        <a href="#trend" class="modal__menu">Тренды</a>
+        <a href="#comit" class="modal__menu">Отзывы</a>
+        <a href="#footer" class="modal__menu">Контакты</a>
         <button class="modal__button">
           <span class="modal__button--text">войти</span>
         </button>
       </div>
-    </div>
-    <div class="senky container">
-      <h1 class="senky__title">Спасибо за подписку</h1>
     </div>
     <div class="container footer__container">
       <footer class="footer">
@@ -198,7 +200,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__contacts">
+          <div class="footer__contacts" id="footer">
             <h6 class="footer__title">Контакты</h6>
             <ul class="footer__ul">
               <li class="footer__li">

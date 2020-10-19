@@ -10,6 +10,8 @@
     max-width: 1100px
   .header
     &__logo
+      left: 10%
+      margin-left: 40px
       margin-right: 380px
   .selection
     max-width: 1100px
@@ -303,6 +305,7 @@
       max-width: 100%
   .header
     max-width: 825px
+    height: 48px
     margin: auto
     &__logo
       margin: 0
@@ -834,7 +837,6 @@
       left: -35px
       bottom: 0
       &--1
-        right: 7px
         width: 36%
         bottom: -294px
   .footer
@@ -858,6 +860,8 @@
       margin-top: 10px
       margin-left: 45px
 @media   ( max-width: 700px )
+  .header
+    min-width: 272px
   .container
     max-width: 690px
     margin: auto
@@ -886,11 +890,13 @@
         width: 100%
   .trend
     &__flex
+      max-width: 100%
       align-items: center
       &--wrap
         width: 88%
         padding: 0
     &__card
+      width: 260px
       margin: 0 0 20px 0
       &--img
         width: 100%
@@ -1174,6 +1180,10 @@
       &--link
         margin-left: 0
 @media  ( max-width: 615px )
+  .header
+    min-width: 272px
+    &>.container
+      max-width: 400px
   .container
     max-width: 600px
   .displey-none

@@ -1,10 +1,23 @@
 .header
-  padding: 26px 0
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translate(-50%)
+  z-index: 999
+  height: 100px
+  background-color: #fff
+  border-radius: 8px
+  width: 1440px
+  &>container
+    position: fixed
   &__mobail
     display: none
     cursor: pointer
     position: absolute
   &__nav
+    max-width: 100%
+    top: 50%
+    transform: translateY(50%)
     display: flex
     align-items: center
     &--link

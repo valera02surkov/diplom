@@ -288,7 +288,19 @@ button {
 }
 
 .header {
-  padding: 26px 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 1440px;
+}
+
+.header > container {
+  position: fixed;
 }
 
 .header__mobail {
@@ -298,6 +310,9 @@ button {
 }
 
 .header__nav {
+  max-width: 100%;
+  top: 50%;
+  transform: translateY(50%);
   display: flex;
   align-items: center;
 }
@@ -357,7 +372,7 @@ button {
 }
 
 .selection {
-  margin-top: 38px;
+  margin-top: 138px;
   width: 100%;
   max-height: 700px;
   position: relative;
@@ -1254,6 +1269,8 @@ button {
     max-width: 1100px;
   }
   .header__logo {
+    left: 10%;
+    margin-left: 40px;
     margin-right: 380px;
   }
   .selection {
@@ -1624,6 +1641,7 @@ button {
   }
   .header {
     max-width: 825px;
+    height: 48px;
     margin: auto;
   }
   .header__logo {
@@ -2295,7 +2313,6 @@ button {
     bottom: 0;
   }
   .email__svg--1 {
-    right: 7px;
     width: 36%;
     bottom: -294px;
   }
@@ -2329,6 +2346,9 @@ button {
 }
 
 @media (max-width: 700px) {
+  .header {
+    min-width: 272px;
+  }
   .container {
     max-width: 690px;
     margin: auto;
@@ -2365,6 +2385,7 @@ button {
     width: 100%;
   }
   .trend__flex {
+    max-width: 100%;
     align-items: center;
   }
   .trend__flex--wrap {
@@ -2372,6 +2393,7 @@ button {
     padding: 0;
   }
   .trend__card {
+    width: 260px;
     margin: 0 0 20px 0;
   }
   .trend__card--img {
@@ -2715,6 +2737,12 @@ button {
 }
 
 @media (max-width: 615px) {
+  .header {
+    min-width: 272px;
+  }
+  .header > .container {
+    max-width: 400px;
+  }
   .container {
     max-width: 600px;
   }
